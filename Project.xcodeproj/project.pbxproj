@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		E1DA93B11FC47E380058DD9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DA93B01FC47E380058DD9B /* main.m */; };
 		E1DA93B41FC47E380058DD9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DA93B31FC47E380058DD9B /* AppDelegate.m */; };
-		E1DA93B71FC47E380058DD9B /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DA93B61FC47E380058DD9B /* FirstViewController.m */; };
-		E1DA93BA1FC47E380058DD9B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DA93B91FC47E380058DD9B /* SecondViewController.m */; };
+		E1DA93B71FC47E380058DD9B /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DA93B61FC47E380058DD9B /* ShopViewController.m */; };
+		E1DA93BA1FC47E380058DD9B /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DA93B91FC47E380058DD9B /* GameViewController.m */; };
 		E1DA93BD1FC47E380058DD9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1DA93BB1FC47E380058DD9B /* Main.storyboard */; };
 		E1DA93BF1FC47E380058DD9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1DA93BE1FC47E380058DD9B /* Assets.xcassets */; };
 		E1DA93C21FC47E380058DD9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1DA93C01FC47E380058DD9B /* LaunchScreen.storyboard */; };
@@ -58,10 +58,10 @@
 		E1DA93B01FC47E380058DD9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E1DA93B21FC47E380058DD9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E1DA93B31FC47E380058DD9B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E1DA93B51FC47E380058DD9B /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		E1DA93B61FC47E380058DD9B /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		E1DA93B81FC47E380058DD9B /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		E1DA93B91FC47E380058DD9B /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		E1DA93B51FC47E380058DD9B /* ShopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShopViewController.h; sourceTree = "<group>"; };
+		E1DA93B61FC47E380058DD9B /* ShopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShopViewController.m; sourceTree = "<group>"; };
+		E1DA93B81FC47E380058DD9B /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		E1DA93B91FC47E380058DD9B /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		E1DA93BC1FC47E380058DD9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1DA93BE1FC47E380058DD9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1DA93C11FC47E380058DD9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -144,10 +144,10 @@
 			children = (
 				E1DA93B21FC47E380058DD9B /* AppDelegate.h */,
 				E1DA93B31FC47E380058DD9B /* AppDelegate.m */,
-				E1DA93B51FC47E380058DD9B /* FirstViewController.h */,
-				E1DA93B61FC47E380058DD9B /* FirstViewController.m */,
-				E1DA93B81FC47E380058DD9B /* SecondViewController.h */,
-				E1DA93B91FC47E380058DD9B /* SecondViewController.m */,
+				E1DA93B51FC47E380058DD9B /* ShopViewController.h */,
+				E1DA93B61FC47E380058DD9B /* ShopViewController.m */,
+				E1DA93B81FC47E380058DD9B /* GameViewController.h */,
+				E1DA93B91FC47E380058DD9B /* GameViewController.m */,
 				E1DA93BB1FC47E380058DD9B /* Main.storyboard */,
 				E1DA93E81FC4848F0058DD9B /* PlayerData.h */,
 				E1DA93E91FC4848F0058DD9B /* PlayerData.m */,
@@ -360,11 +360,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1DA93BA1FC47E380058DD9B /* SecondViewController.m in Sources */,
+				E1DA93BA1FC47E380058DD9B /* GameViewController.m in Sources */,
 				E1DA93B41FC47E380058DD9B /* AppDelegate.m in Sources */,
 				E1DA93EA1FC4848F0058DD9B /* PlayerData.m in Sources */,
 				E1DA93E71FC480690058DD9B /* MenuController.m in Sources */,
-				E1DA93B71FC47E380058DD9B /* FirstViewController.m in Sources */,
+				E1DA93B71FC47E380058DD9B /* ShopViewController.m in Sources */,
 				E1DA93B11FC47E380058DD9B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -597,6 +597,7 @@
 				E1DA93DE1FC47E380058DD9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1DA93DF1FC47E380058DD9B /* Build configuration list for PBXNativeTarget "ProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -605,6 +606,7 @@
 				E1DA93E11FC47E380058DD9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1DA93E21FC47E380058DD9B /* Build configuration list for PBXNativeTarget "ProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -613,6 +615,7 @@
 				E1DA93E41FC47E380058DD9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

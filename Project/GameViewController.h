@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PlayerData.h"
 
-@interface SecondViewController : UIViewController
+@interface GameViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *PlayerHPLabel;
 
+-(void) Failure;
+-(void) onTick:(NSTimer *)timer;
 @end
 

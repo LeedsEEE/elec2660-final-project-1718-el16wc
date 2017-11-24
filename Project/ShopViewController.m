@@ -6,13 +6,13 @@
 //  Copyright © 2017 William Carne [el16wc]. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "ShopViewController.h"
 
-@interface FirstViewController ()
+@interface ShopViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation ShopViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
