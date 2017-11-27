@@ -11,8 +11,8 @@
 @interface PlayerData : NSObject
 
 @property (nonatomic, copy) NSString *PlayerName;
-@property int MaxHP;
-@property int HP;
+@property float MaxHP;
+@property float HP;
 @property int AttackPower;
 @property int Coins;
 @property int Score;

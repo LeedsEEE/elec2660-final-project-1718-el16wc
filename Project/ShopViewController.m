@@ -18,8 +18,8 @@
     [super viewDidLoad];
     PlayerData *data = [PlayerData sharedInstance];
     self.PlayerNameTest.text = [data PlayerName];
-    self.MaxHealthLabel.text = [NSString stringWithFormat:@"%d HP",[data MaxHP]];
-    self.HealthLabel.text = [NSString stringWithFormat:@"%d HP",[data HP]];
+    self.MaxHealthLabel.text = [NSString stringWithFormat:@"%.0f HP",[data MaxHP]];
+    self.HealthLabel.text = [NSString stringWithFormat:@"%.0f HP",[data HP]];
     self.AttackLabel.text = [NSString stringWithFormat:@"%d AP",[data AttackPower]];
     self.CoinLabel.text = [NSString stringWithFormat:@"%d Gold",[data Coins]];
     // Do any additional setup after loading the view, typically from a nib.
@@ -38,8 +38,8 @@
         if([data HP] != [data MaxHP]){
     [data setHP:[data MaxHP]];
     [data setCoins:[data Coins] - 5];
-    self.MaxHealthLabel.text = [NSString stringWithFormat:@"%d HP",[data MaxHP]];
-    self.HealthLabel.text = [NSString stringWithFormat:@"%d HP",[data HP]];
+    self.MaxHealthLabel.text = [NSString stringWithFormat:@"%.0f HP",[data MaxHP]];
+    self.HealthLabel.text = [NSString stringWithFormat:@"%.0f HP",[data HP]];
     self.AttackLabel.text = [NSString stringWithFormat:@"%d AP",[data AttackPower]];
     self.CoinLabel.text = [NSString stringWithFormat:@"%d Gold",[data Coins]];
         }
@@ -51,8 +51,8 @@
     if([data Coins] >= 10){
         [data setCoins:[data Coins] - 10];
         [data setMaxHP:[data MaxHP]+1];
-        self.MaxHealthLabel.text = [NSString stringWithFormat:@"%d HP",[data MaxHP]];
-        self.HealthLabel.text = [NSString stringWithFormat:@"%d HP",[data HP]];
+        self.MaxHealthLabel.text = [NSString stringWithFormat:@"%.0f HP",[data MaxHP]];
+        self.HealthLabel.text = [NSString stringWithFormat:@"%.0f HP",[data HP]];
         self.AttackLabel.text = [NSString stringWithFormat:@"%d AP",[data AttackPower]];
         self.CoinLabel.text = [NSString stringWithFormat:@"%d Gold",[data Coins]];
     }

@@ -106,23 +106,77 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PlayerHP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rjg-8J-Feb">
-                                <frame key="frameInset" minX="166" minY="366" width="70" height="21"/>
+                                <frame key="frameInset" minX="152" minY="597" width="70" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JP6-QY-hqh">
+                                <frame key="frameInset" minX="360" minY="80" width="10" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.70789805147300733" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ri7-e2-agI">
+                                <frame key="frameInset" minX="37" minY="559" width="300" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.10685466766871074" green="0.64084763601036276" blue="0.055678419241460761" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPx-hm-kQG">
+                                <frame key="frameInset" minX="71" minY="163" width="45" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="GOOD"/>
+                                <connections>
+                                    <action selector="PlayerAttack:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Pob-as-2i0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UzJ-hr-Cot">
+                                <frame key="frameInset" minX="274" minY="163" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BAD"/>
+                                <connections>
+                                    <action selector="EnemyAttack:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="pxB-Ms-CuI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmb-O7-3mb">
+                                <frame key="frameInset" minX="78" minY="315" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BAD"/>
+                                <connections>
+                                    <action selector="EnemyAttack:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="WIV-q0-oDr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B6e-G4-IpE">
+                                <frame key="frameInset" minX="274" minY="318" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BAD"/>
+                                <connections>
+                                    <action selector="EnemyAttack:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="ZeE-W8-ZO3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
                     <connections>
+                        <outlet property="EnemyAttackOutlet1" destination="UzJ-hr-Cot" id="TgD-kP-vdw"/>
+                        <outlet property="EnemyAttackOutlet2" destination="pmb-O7-3mb" id="Nmc-ti-yvj"/>
+                        <outlet property="EnemyAttackOutlet3" destination="B6e-G4-IpE" id="JMl-ma-zRi"/>
+                        <outlet property="PlayerAttackOutlet" destination="yPx-hm-kQG" id="z4R-tb-YNq"/>
+                        <outlet property="PlayerHPBar" destination="Ri7-e2-agI" id="tYf-nB-xVp"/>
                         <outlet property="PlayerHPLabel" destination="Rjg-8J-Feb" id="j8K-nR-nMF"/>
+                        <outlet property="TimerBar" destination="JP6-QY-hqh" id="9Dq-6b-wHP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
         </scene>
         <!--Menu Controller-->
         <scene sceneID="Zod-GV-vVs">
