@@ -16,6 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _Level = 1;
+    _MonsterHP = 100;
+    _MonsterHPMax = 100;
+    _MonsterAttack = 10;
+    _Monstertype = 1;
+    _ButtonState = 0;
+    
+   // [self StartFight];
+    
+    /*[self UpdateScreen];
+    
+    
+    
     [NSTimer scheduledTimerWithTimeInterval:0.05
                                                      target:self
                                                    selector:@selector(onTick:)
@@ -25,9 +39,9 @@
     _TimeRemaining = 100;
     
     PlayerData *data = [PlayerData sharedInstance];
-    self.PlayerHPLabel.text = [NSString stringWithFormat:@"%f HP",[data HP]];
+    self.PlayerHPBar.text = [NSString stringWithFormat:@"%f HP",[data HP]];
     
-    
+    */
     
     
     
@@ -40,50 +54,269 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (void)Failure{
+
+-(void)UpdateScreen{
+    //initialising data needed to update positions
     PlayerData *data = [PlayerData sharedInstance];
-    [data setHP:0];
-    self.PlayerHPLabel.text = [NSString stringWithFormat:@"%.0f HP",[data HP]];
-}
--(void)onTick:(NSTimer *)timer {
-    PlayerData *data = [PlayerData sharedInstance];
-    //[data setHP:[data HP]-1];
-    _TimeRemaining = _TimeRemaining -1;
-     self.PlayerHPLabel.text = [NSString stringWithFormat:@"%.0f HP",[data HP]];
+    CGRect Screen = [[UIScreen mainScreen] bounds];
+    float ScreenWidth = CGRectGetWidth(Screen);
+    float ScreenHeight = CGRectGetHeight(Screen);
     
+    //Updating Timer
     CGRect TimerBarFrame = [self.TimerBar frame];
     TimerBarFrame.size.width = 10;
     TimerBarFrame.size.height = _TimeRemaining*5;
-    TimerBarFrame.origin.x = 360;
-    TimerBarFrame.origin.y = 80;
+    TimerBarFrame.origin.x = ScreenWidth - 25;
+    TimerBarFrame.origin.y = ScreenHeight/10;
     [self.TimerBar setFrame:TimerBarFrame];
     
+    //updating Enemy Image
+    CGRect EnemyImageFrame = [self.EnemyImage frame];
+    EnemyImageFrame.origin.x = ScreenWidth*0.5 - 128;
+    EnemyImageFrame.origin.y = ScreenHeight* 0.5 - 128;
+    [self.EnemyImage setFrame:EnemyImageFrame];
+    
+    //updating Enemy HP Bar
+    float EnemyHPPercentage = _MonsterHP / _MonsterHPMax;
+    CGRect EnemyHPBarFrame = [self.EnemyHPBar frame];
+    EnemyHPBarFrame.size.width = EnemyHPPercentage * ScreenWidth * 0.8;
+    EnemyHPBarFrame.size.height = 25;
+    EnemyHPBarFrame.origin.x = 0.1 * ScreenWidth;
+    EnemyHPBarFrame.origin.y = 0.1 * ScreenHeight;
+    [self.EnemyHPBar setFrame:EnemyHPBarFrame];
+    CGRect EnemyHPBackgroundFrame = [self.EnemyHPBackground frame];
+    EnemyHPBackgroundFrame.size.width = ScreenWidth * 0.8;
+    EnemyHPBackgroundFrame.size.height = 25;
+    EnemyHPBackgroundFrame.origin.x = 0.1 * ScreenWidth;
+    EnemyHPBackgroundFrame.origin.y = 0.1 * ScreenHeight;
+    [self.EnemyHPBackground setFrame:EnemyHPBackgroundFrame];
+    self.EnemyHPBar.text = [NSString stringWithFormat:@"%.0f HP",_MonsterHP];
+    
+    //updating Player HP Bar
+    self.PlayerHPBar.text = [NSString stringWithFormat:@"%.0f HP",[data HP]];
     CGRect PlayerHPFrame = [self.PlayerHPBar frame];
+    CGRect PlayerHPBackgroundFrame = [self.PlayerHPBackground frame];
+    PlayerHPBackgroundFrame.size.width = ScreenWidth * 0.8;
+    PlayerHPBackgroundFrame.size.height = 25;
+    PlayerHPBackgroundFrame.origin.x = 0.1 * ScreenWidth;
+    PlayerHPBackgroundFrame.origin.y = 0.9 * ScreenHeight;
+    [self.PlayerHPBackground setFrame:PlayerHPBackgroundFrame];
     float PlayerHP = [data HP];
     float MaxPlayerHP = [data MaxHP];
     float HPPercentage = 1;
     HPPercentage = PlayerHP/MaxPlayerHP;
-    PlayerHPFrame.size.width = HPPercentage * 300;
-    //PlayerHPFrame.size.width = _TimeRemaining*3;
+    PlayerHPFrame.size.width = HPPercentage * ScreenWidth * 0.8;
+    PlayerHPFrame.size.height = 25;
     NSLog(@"Current percentage = %.0f",HPPercentage);
-    PlayerHPFrame.origin.x = 50;
-    PlayerHPFrame.origin.y = 620;
+    PlayerHPFrame.origin.x = 0.1 * ScreenWidth;
+    PlayerHPFrame.origin.y = 0.9 * ScreenHeight;
     [self.PlayerHPBar setFrame:PlayerHPFrame];
+    
+    
+    //updating Button Positions
+    if (_ButtonState == 0){
+        [self Buttonstate0];
+    }
+    if (_ButtonState == 1){
+        [self Buttonstate1];
+    }
+    if (_ButtonState == 2){
+        [self Buttonstate2];
+    }
+    if (_ButtonState == 3){
+        [self Buttonstate3];
+    }
+}
+
+-(void) Buttonstate0{
+    CGRect Screen = [[UIScreen mainScreen] bounds];
+    float ScreenWidth = CGRectGetWidth(Screen);
+    float ScreenHeight = CGRectGetHeight(Screen);
+    
+    CGRect GoodButtonFrame = [self.PlayerAttackOutlet frame];
+    GoodButtonFrame.origin.x = ScreenWidth * 0.1;
+    GoodButtonFrame.origin.y = ScreenHeight * 0.25;
+    [self.PlayerAttackOutlet setFrame:GoodButtonFrame];
+    
+    CGRect BadButtonFrame1 = [self.EnemyAttackOutlet1 frame];
+    BadButtonFrame1.origin.x = ScreenWidth * 0.1;
+    BadButtonFrame1.origin.y = ScreenHeight * 0.75;
+    [self.EnemyAttackOutlet1 setFrame:BadButtonFrame1];
+    
+    CGRect BadButtonFrame2 = [self.EnemyAttackOutlet2 frame];
+    BadButtonFrame2.origin.x = ScreenWidth * 0.7;
+    BadButtonFrame2.origin.y = ScreenHeight * 0.25;
+    [self.EnemyAttackOutlet2 setFrame:BadButtonFrame2];
+    
+    CGRect BadButtonFrame3 = [self.EnemyAttackOutlet3 frame];
+    BadButtonFrame3.origin.x = ScreenWidth * 0.7;
+    BadButtonFrame3.origin.y = ScreenHeight * 0.75;
+    [self.EnemyAttackOutlet3 setFrame:BadButtonFrame3];
+    
+}
+
+
+-(void) Buttonstate1{
+    CGRect Screen = [[UIScreen mainScreen] bounds];
+    float ScreenWidth = CGRectGetWidth(Screen);
+    float ScreenHeight = CGRectGetHeight(Screen);
+    
+    CGRect GoodButtonFrame = [self.PlayerAttackOutlet frame];
+    GoodButtonFrame.origin.x = ScreenWidth * 0.1;
+    GoodButtonFrame.origin.y = ScreenHeight * 0.75;
+    [self.PlayerAttackOutlet setFrame:GoodButtonFrame];
+    
+    CGRect BadButtonFrame1 = [self.EnemyAttackOutlet1 frame];
+    BadButtonFrame1.origin.x = ScreenWidth * 0.1;
+    BadButtonFrame1.origin.y = ScreenHeight * 0.25;
+    [self.EnemyAttackOutlet1 setFrame:BadButtonFrame1];
+    
+    CGRect BadButtonFrame2 = [self.EnemyAttackOutlet2 frame];
+    BadButtonFrame2.origin.x = ScreenWidth * 0.7;
+    BadButtonFrame2.origin.y = ScreenHeight * 0.25;
+    [self.EnemyAttackOutlet2 setFrame:BadButtonFrame2];
+    
+    CGRect BadButtonFrame3 = [self.EnemyAttackOutlet3 frame];
+    BadButtonFrame3.origin.x = ScreenWidth * 0.7;
+    BadButtonFrame3.origin.y = ScreenHeight * 0.75;
+    [self.EnemyAttackOutlet3 setFrame:BadButtonFrame3];
+    
+}
+-(void) Buttonstate2{
+    CGRect Screen = [[UIScreen mainScreen] bounds];
+    float ScreenWidth = CGRectGetWidth(Screen);
+    float ScreenHeight = CGRectGetHeight(Screen);
+    
+    CGRect GoodButtonFrame = [self.PlayerAttackOutlet frame];
+    GoodButtonFrame.origin.x = ScreenWidth * 0.7;
+    GoodButtonFrame.origin.y = ScreenHeight * 0.25;
+    [self.PlayerAttackOutlet setFrame:GoodButtonFrame];
+    
+    CGRect BadButtonFrame1 = [self.EnemyAttackOutlet1 frame];
+    BadButtonFrame1.origin.x = ScreenWidth * 0.1;
+    BadButtonFrame1.origin.y = ScreenHeight * 0.75;
+    [self.EnemyAttackOutlet1 setFrame:BadButtonFrame1];
+    
+    CGRect BadButtonFrame2 = [self.EnemyAttackOutlet2 frame];
+    BadButtonFrame2.origin.x = ScreenWidth * 0.1;
+    BadButtonFrame2.origin.y = ScreenHeight * 0.25;
+    [self.EnemyAttackOutlet2 setFrame:BadButtonFrame2];
+    
+    CGRect BadButtonFrame3 = [self.EnemyAttackOutlet3 frame];
+    BadButtonFrame3.origin.x = ScreenWidth * 0.7;
+    BadButtonFrame3.origin.y = ScreenHeight * 0.75;
+    [self.EnemyAttackOutlet3 setFrame:BadButtonFrame3];
+    
+}
+-(void) Buttonstate3{
+    CGRect Screen = [[UIScreen mainScreen] bounds];
+    float ScreenWidth = CGRectGetWidth(Screen);
+    float ScreenHeight = CGRectGetHeight(Screen);
+    
+    CGRect GoodButtonFrame = [self.PlayerAttackOutlet frame];
+    GoodButtonFrame.origin.x = ScreenWidth * 0.7;
+    GoodButtonFrame.origin.y = ScreenHeight * 0.75;
+    [self.PlayerAttackOutlet setFrame:GoodButtonFrame];
+    
+    CGRect BadButtonFrame1 = [self.EnemyAttackOutlet1 frame];
+    BadButtonFrame1.origin.x = ScreenWidth * 0.1;
+    BadButtonFrame1.origin.y = ScreenHeight * 0.75;
+    [self.EnemyAttackOutlet1 setFrame:BadButtonFrame1];
+    
+    CGRect BadButtonFrame2 = [self.EnemyAttackOutlet2 frame];
+    BadButtonFrame2.origin.x = ScreenWidth * 0.7;
+    BadButtonFrame2.origin.y = ScreenHeight * 0.25;
+    [self.EnemyAttackOutlet2 setFrame:BadButtonFrame2];
+    
+    CGRect BadButtonFrame3 = [self.EnemyAttackOutlet3 frame];
+    BadButtonFrame3.origin.x = ScreenWidth * 0.1;
+    BadButtonFrame3.origin.y = ScreenHeight * 0.25;
+    [self.EnemyAttackOutlet3 setFrame:BadButtonFrame3];
+    
+}
+
+
+
+- (void)GAMEOVER{
+    PlayerData *data = [PlayerData sharedInstance];
+    [data setHP:0];
+
+}
+-(void)onTick:(NSTimer *)timer {
+    
+    _TimeRemaining = _TimeRemaining -1;
+    
+    [self UpdateScreen];
     
     if (_TimeRemaining <= 0){
         [timer invalidate];
         timer = nil;
         NSLog(@"!G A M E  O V E R!");
-    }
+        }
      }
+
+-(void)StartFight{
+    [self UpdateScreen];
+    _TimeRemaining = 100;
+    self.PlayerAttackOutlet.hidden = 0;
+    self.EnemyAttackOutlet1.hidden = 0;
+    self.EnemyAttackOutlet2.hidden = 0;
+    self.EnemyAttackOutlet3.hidden = 0;
+    self.EnemyImage.hidden = 0;
+    self.TimerBar.hidden = 0;
+    self.PlayerHPBar.hidden = 0;
+    self.PlayerHPBackground.hidden = 0;
+    self.EnemyHPBar.hidden = 0;
+    self.EnemyHPBackground.hidden = 0;
+    
+    self.EnemyIndicator1.hidden = 1;
+    self.EnemyIndicator2.hidden = 1;
+    self.SelectEnemyType1Outlet.hidden = 1;
+    self.SelectEnemyType2Outlet.hidden = 1;
+    
+    [self UpdateScreen];
+    
+    float TempTimer = _Level * _Monstertype;
+    
+    [NSTimer scheduledTimerWithTimeInterval:1/TempTimer
+                                     target:self
+                                   selector:@selector(onTick:)
+                                   userInfo:nil
+                                    repeats:YES];
+    
+    _TimeRemaining = 100;
+    
+    _MonsterHP = 100 * _Level * _Monstertype;
+    _MonsterHPMax = 100 * _Level * _Monstertype;
+    _MonsterAttack = 10 * _Level * _Monstertype;
+    
+    PlayerData *data = [PlayerData sharedInstance];
+    self.PlayerHPBar.text = [NSString stringWithFormat:@"%.0f HP",[data HP]];
+}
 
 - (IBAction)PlayerAttack:(UIButton *)sender {
     PlayerData *data = [PlayerData sharedInstance];
-    [data setHP:[data HP]+1];
+    //[data setHP:[data HP]+1];
+    _MonsterHP = _MonsterHP - [data AttackPower];
+    _ButtonState = rand() %4;
+    [self UpdateScreen];
+    
 }
 
 - (IBAction)EnemyAttack:(UIButton *)sender {
     PlayerData *data = [PlayerData sharedInstance];
-    [data setHP:[data HP]-1];
+    [data setHP:[data HP]-_MonsterAttack];
+    [self UpdateScreen];
+
+}
+
+- (IBAction)SelectEnemyType2:(UIButton *)sender {
+    _Monstertype = 2;
+    [self StartFight];
+}
+
+- (IBAction)SelectEnemyType1:(UIButton *)sender {
+    _Monstertype = 1;
+    [self StartFight];
 }
 @end
