@@ -14,8 +14,8 @@
 @property float MaxHP;
 @property float HP;
 @property int AttackPower;
-@property int Coins;
-@property int Score;
+@property float Coins;
+@property float Score;
 
 + (PlayerData *) sharedInstance;
 

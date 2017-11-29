@@ -79,7 +79,12 @@
     //updating Enemy HP Bar
     float EnemyHPPercentage = _MonsterHP / _MonsterHPMax;
     CGRect EnemyHPBarFrame = [self.EnemyHPBar frame];
+    if (EnemyHPPercentage >=0){
     EnemyHPBarFrame.size.width = EnemyHPPercentage * ScreenWidth * 0.8;
+    }
+    else{
+        EnemyHPBarFrame.size.width = 0;
+    }
     EnemyHPBarFrame.size.height = 25;
     EnemyHPBarFrame.origin.x = 0.1 * ScreenWidth;
     EnemyHPBarFrame.origin.y = 0.1 * ScreenHeight;
@@ -253,6 +258,12 @@
         timer = nil;
         NSLog(@"!G A M E  O V E R!");
         }
+    if (_MonsterHP <= 0){
+        [timer invalidate];
+        timer = nil;
+        [self EndFight];
+    }
+    
      }
 
 -(void)StartFight{
@@ -276,6 +287,10 @@
     
     [self UpdateScreen];
     
+    _MonsterHP = 100 * _Level * _Monstertype;
+    _MonsterHPMax = 100 * _Level * _Monstertype;
+    _MonsterAttack = 10 * _Level * _Monstertype;
+    
     float TempTimer = _Level * _Monstertype;
     
     [NSTimer scheduledTimerWithTimeInterval:1/TempTimer
@@ -286,13 +301,36 @@
     
     _TimeRemaining = 100;
     
-    _MonsterHP = 100 * _Level * _Monstertype;
-    _MonsterHPMax = 100 * _Level * _Monstertype;
-    _MonsterAttack = 10 * _Level * _Monstertype;
+    
     
     PlayerData *data = [PlayerData sharedInstance];
     self.PlayerHPBar.text = [NSString stringWithFormat:@"%.0f HP",[data HP]];
 }
+
+-(void)EndFight{
+    self.PlayerAttackOutlet.hidden = 1;
+    self.EnemyAttackOutlet1.hidden = 1;
+    self.EnemyAttackOutlet2.hidden = 1;
+    self.EnemyAttackOutlet3.hidden = 1;
+    self.EnemyImage.hidden = 1;
+    self.TimerBar.hidden = 1;
+    self.PlayerHPBar.hidden = 1;
+    self.PlayerHPBackground.hidden = 1;
+    self.EnemyHPBar.hidden = 1;
+    self.EnemyHPBackground.hidden = 1;
+    
+    self.EnemyIndicator1.hidden = 0;
+    self.EnemyIndicator2.hidden = 0;
+    self.SelectEnemyType1Outlet.hidden = 0;
+    self.SelectEnemyType2Outlet.hidden = 0;
+    
+    PlayerData *data = [PlayerData sharedInstance];
+    [data setCoins:[data Coins]+10*_Monstertype];
+    [data setScore:[data Score]+100*_Monstertype*_TimeRemaining];
+    _Level++;
+}
+
+
 
 - (IBAction)PlayerAttack:(UIButton *)sender {
     PlayerData *data = [PlayerData sharedInstance];

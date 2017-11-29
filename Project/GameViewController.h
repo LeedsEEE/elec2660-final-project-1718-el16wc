@@ -35,6 +35,7 @@
 
 @property int TimeRemaining;
 @property int ButtonState;
+@property int LevelState;
 
 @property float MonsterHP;
 @property float MonsterHPMax;
@@ -54,6 +55,7 @@
 -(void) Buttonstate3;
 
 -(void) StartFight;
+-(void) EndFight;
 
 @end
 
