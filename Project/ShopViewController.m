@@ -21,7 +21,7 @@
     self.MaxHealthLabel.text = [NSString stringWithFormat:@"%.0f HP",[data MaxHP]];
     self.HealthLabel.text = [NSString stringWithFormat:@"%.0f HP",[data HP]];
     self.AttackLabel.text = [NSString stringWithFormat:@"%d AP",[data AttackPower]];
-    self.CoinLabel.text = [NSString stringWithFormat:@"%d Gold",[data Coins]];
+    self.CoinLabel.text = [NSString stringWithFormat:@"%.0f Gold",[data Coins]];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -41,7 +41,7 @@
     self.MaxHealthLabel.text = [NSString stringWithFormat:@"%.0f HP",[data MaxHP]];
     self.HealthLabel.text = [NSString stringWithFormat:@"%.0f HP",[data HP]];
     self.AttackLabel.text = [NSString stringWithFormat:@"%d AP",[data AttackPower]];
-    self.CoinLabel.text = [NSString stringWithFormat:@"%d Gold",[data Coins]];
+    self.CoinLabel.text = [NSString stringWithFormat:@"%.0f Gold",[data Coins]];
         }
     }
 }
@@ -54,7 +54,7 @@
         self.MaxHealthLabel.text = [NSString stringWithFormat:@"%.0f HP",[data MaxHP]];
         self.HealthLabel.text = [NSString stringWithFormat:@"%.0f HP",[data HP]];
         self.AttackLabel.text = [NSString stringWithFormat:@"%d AP",[data AttackPower]];
-        self.CoinLabel.text = [NSString stringWithFormat:@"%d Gold",[data Coins]];
+        self.CoinLabel.text = [NSString stringWithFormat:@"%.0f Gold",[data Coins]];
     }
 }
 
@@ -64,7 +64,7 @@
     [data setAttackPower:[data AttackPower]+5];
     self.AttackLabel.text = [NSString stringWithFormat:@"%d AP",[data AttackPower]];
     [data setCoins:[data Coins] - 10];
-    self.CoinLabel.text = [NSString stringWithFormat:@"%d Gold",[data Coins]];
+    self.CoinLabel.text = [NSString stringWithFormat:@"%.0f Gold",[data Coins]];
     }
 }
 @end

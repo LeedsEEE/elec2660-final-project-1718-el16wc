@@ -39,7 +39,7 @@
 - (IBAction)StartGame:(UIButton *)sender {
     PlayerData *data = [PlayerData sharedInstance];
     [data setPlayerName:self.PlayerNameTextField.text ];
-    [data setMaxHP:77];
+    [data setMaxHP:50];
 }
 
 

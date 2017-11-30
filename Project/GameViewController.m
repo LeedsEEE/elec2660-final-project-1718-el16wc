@@ -110,8 +110,14 @@
     float MaxPlayerHP = [data MaxHP];
     float HPPercentage = 1;
     HPPercentage = PlayerHP/MaxPlayerHP;
-    PlayerHPFrame.size.width = HPPercentage * ScreenWidth * 0.8;
-    PlayerHPFrame.size.height = 25;
+    if(HPPercentage >=0){
+        PlayerHPFrame.size.width = HPPercentage * ScreenWidth * 0.8;
+        PlayerHPFrame.size.height = 25;
+    }
+    else{
+        PlayerHPFrame.size.width = 0;
+        PlayerHPFrame.size.height = 0;
+    }
     NSLog(@"Current percentage = %.0f",HPPercentage);
     PlayerHPFrame.origin.x = 0.1 * ScreenWidth;
     PlayerHPFrame.origin.y = 0.9 * ScreenHeight;
