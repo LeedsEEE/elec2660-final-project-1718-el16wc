@@ -24,6 +24,14 @@
     self.CoinLabel.text = [NSString stringWithFormat:@"%.0f Gold",[data Coins]];
     // Do any additional setup after loading the view, typically from a nib.
 }
+-(void)viewDidAppear:(BOOL)animated{
+    PlayerData *data = [PlayerData sharedInstance];
+    self.PlayerNameTest.text = [data PlayerName];
+    self.MaxHealthLabel.text = [NSString stringWithFormat:@"%.0f HP",[data MaxHP]];
+    self.HealthLabel.text = [NSString stringWithFormat:@"%.0f HP",[data HP]];
+    self.AttackLabel.text = [NSString stringWithFormat:@"%d AP",[data AttackPower]];
+    self.CoinLabel.text = [NSString stringWithFormat:@"%.0f Gold",[data Coins]];
+}
 
 
 - (void)didReceiveMemoryWarning {
@@ -35,7 +43,7 @@
 - (IBAction)HealthPotion:(UIButton *)sender {
     PlayerData *data = [PlayerData sharedInstance];
     if([data Coins] >= 5){
-        if([data HP] != [data MaxHP]){
+        if([data HP] != [data MaxHP]){                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
     [data setHP:[data MaxHP]];
     [data setCoins:[data Coins] - 5];
     self.MaxHealthLabel.text = [NSString stringWithFormat:@"%.0f HP",[data MaxHP]];
@@ -50,7 +58,7 @@
     PlayerData *data = [PlayerData sharedInstance];
     if([data Coins] >= 10){
         [data setCoins:[data Coins] - 10];
-        [data setMaxHP:[data MaxHP]+1];
+        [data setMaxHP:[data MaxHP]+10];
         self.MaxHealthLabel.text = [NSString stringWithFormat:@"%.0f HP",[data MaxHP]];
         self.HealthLabel.text = [NSString stringWithFormat:@"%.0f HP",[data HP]];
         self.AttackLabel.text = [NSString stringWithFormat:@"%d AP",[data AttackPower]];

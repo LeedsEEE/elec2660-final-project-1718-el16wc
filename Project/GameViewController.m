@@ -23,6 +23,25 @@
     _MonsterAttack = 10;
     _Monstertype = 1;
     _ButtonState = 0;
+    CGRect Screen = [[UIScreen mainScreen] bounds];
+    float ScreenWidth = CGRectGetWidth(Screen);
+    float ScreenHeight = CGRectGetHeight(Screen);
+    CGRect Enemyindicator1Frame = [self.EnemyIndicator1 frame];
+    Enemyindicator1Frame.origin.x = 0.13*ScreenWidth;
+    Enemyindicator1Frame.origin.y = 0.55*ScreenHeight;
+    CGRect Enemyindicator2Frame = [self.EnemyIndicator2 frame];
+    Enemyindicator2Frame.origin.x = 0.575*ScreenWidth;
+    Enemyindicator2Frame.origin.y = 0.55*ScreenHeight;
+    CGRect SelectEnemyType1OutletFrame = [self.SelectEnemyType1Outlet frame];
+    SelectEnemyType1OutletFrame.origin.x = 0.05*ScreenWidth;
+    SelectEnemyType1OutletFrame.origin.y = 0.25*ScreenHeight;
+    CGRect SelectEnemyType2OutletFrame = [self.SelectEnemyType2Outlet frame];
+    SelectEnemyType2OutletFrame.origin.x = 0.5*ScreenWidth;
+    SelectEnemyType2OutletFrame.origin.y = 0.25*ScreenHeight;
+    [self.EnemyIndicator1 setFrame:Enemyindicator1Frame];
+    [self.EnemyIndicator2 setFrame:Enemyindicator2Frame];
+    [self.SelectEnemyType1Outlet setFrame:SelectEnemyType1OutletFrame];
+    [self.SelectEnemyType2Outlet setFrame:SelectEnemyType2OutletFrame];
     
    // [self StartFight];
     
@@ -333,7 +352,31 @@
     PlayerData *data = [PlayerData sharedInstance];
     [data setCoins:[data Coins]+10*_Monstertype];
     [data setScore:[data Score]+100*_Monstertype*_TimeRemaining];
+    CGRect Screen = [[UIScreen mainScreen] bounds];
+    float ScreenWidth = CGRectGetWidth(Screen);
+    float ScreenHeight = CGRectGetHeight(Screen);
+    
+    CGRect Enemyindicator1Frame = [self.EnemyIndicator1 frame];
+    Enemyindicator1Frame.origin.x = 0.13*ScreenWidth;
+    Enemyindicator1Frame.origin.y = 0.55*ScreenHeight;
+    CGRect Enemyindicator2Frame = [self.EnemyIndicator2 frame];
+    Enemyindicator2Frame.origin.x = 0.575*ScreenWidth;
+    Enemyindicator2Frame.origin.y = 0.55*ScreenHeight;
+    CGRect SelectEnemyType1OutletFrame = [self.SelectEnemyType1Outlet frame];
+    SelectEnemyType1OutletFrame.origin.x = 0.05*ScreenWidth;
+    SelectEnemyType1OutletFrame.origin.y = 0.25*ScreenHeight;
+    CGRect SelectEnemyType2OutletFrame = [self.SelectEnemyType2Outlet frame];
+    SelectEnemyType2OutletFrame.origin.x = 0.5*ScreenWidth;
+    SelectEnemyType2OutletFrame.origin.y = 0.25*ScreenHeight;
+    [self.EnemyIndicator1 setFrame:Enemyindicator1Frame];
+    [self.EnemyIndicator2 setFrame:Enemyindicator2Frame];
+    [self.SelectEnemyType1Outlet setFrame:SelectEnemyType1OutletFrame];
+    [self.SelectEnemyType2Outlet setFrame:SelectEnemyType2OutletFrame];
+    
+    
+    
     _Level++;
+    
 }
 
 
