@@ -14,13 +14,17 @@
 - (IBAction)EnemyAttack:(UIButton *)sender;
 - (IBAction)SelectEnemyType2:(UIButton *)sender;
 - (IBAction)SelectEnemyType1:(UIButton *)sender;
+- (IBAction)ReturnToMenu:(UIButton *)sender;
 
+@property (weak, nonatomic) IBOutlet UIButton *ReturnToMenuOutlet;
+@property (weak, nonatomic) IBOutlet UILabel *FinalScoreLabel;
 
 @property (weak, nonatomic) IBOutlet UIButton *PlayerAttackOutlet;
 @property (weak, nonatomic) IBOutlet UIButton *EnemyAttackOutlet1;
 @property (weak, nonatomic) IBOutlet UIButton *EnemyAttackOutlet2;
 @property (weak, nonatomic) IBOutlet UIButton *EnemyAttackOutlet3;
 
+@property (weak, nonatomic) IBOutlet UILabel *CurrentScoreLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *EnemyImage;
 @property (weak, nonatomic) IBOutlet UILabel *TimerBar;
 @property (weak, nonatomic) IBOutlet UILabel *PlayerHPBar;

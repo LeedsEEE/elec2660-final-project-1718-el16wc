@@ -18,6 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdm-5M-LrX">
+                                <frame key="frameInset" minX="88" minY="574" width="199" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPa-jY-gF9">
                                 <frame key="frameInset" minX="233" minY="142" width="93" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -63,15 +70,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Gold" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEg-5F-t6A">
-                                <frame key="frameInset" minX="128" minY="38" width="138" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahc-HM-SdZ">
+                                <frame key="frameInset" minX="192" minY="46" width="183" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdm-5M-LrX">
-                                <frame key="frameInset" minX="88" minY="574" width="199" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Gold" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEg-5F-t6A">
+                                <frame key="frameInset" minY="46" width="184" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -87,6 +94,7 @@
                         <outlet property="HealthLabel" destination="KPa-jY-gF9" id="tF9-1q-MA9"/>
                         <outlet property="MaxHealthLabel" destination="3ZD-Hx-PCa" id="Gth-PM-pu3"/>
                         <outlet property="PlayerNameTest" destination="Zdm-5M-LrX" id="XuK-Kq-1V8"/>
+                        <outlet property="ScoreLabel" destination="ahc-HM-SdZ" id="GWl-JV-pzA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -120,15 +128,6 @@
                                 <state key="normal" title="GOOD"/>
                                 <connections>
                                     <action selector="PlayerAttack:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Pob-as-2i0"/>
-                                </connections>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UzJ-hr-Cot">
-                                <frame key="frameInset" minX="330" minY="562" width="45" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.06950727541" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="BAD"/>
-                                <connections>
-                                    <action selector="EnemyAttack:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="pxB-Ms-CuI"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmb-O7-3mb">
@@ -186,7 +185,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEq-7m-Vsz">
-                                <frame key="frameInset" minX="153" minY="98" width="256" height="256"/>
+                                <frame key="frameInset" minX="253" minY="536" width="256" height="256"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Doorx256.png"/>
                                 <connections>
@@ -194,7 +193,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALN-ex-Is7">
-                                <frame key="frameInset" minX="-35" minY="98" width="256" height="256"/>
+                                <frame key="frameInset" minX="208" minY="507" width="256" height="256"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Doorx256.png"/>
                                 <connections>
@@ -202,18 +201,51 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bad guyx512.png" translatesAutoresizingMaskIntoConstraints="NO" id="o7A-cl-bpB">
-                                <frame key="frameInset" minX="23" minY="362" width="128" height="128"/>
+                                <frame key="frameInset" minX="201" minY="553" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Chestx512.png" translatesAutoresizingMaskIntoConstraints="NO" id="wmW-uN-Lwy">
-                                <frame key="frameInset" minX="209" minY="404" width="128" height="64"/>
+                                <frame key="frameInset" minX="217" minY="518" width="128" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ec0-Xj-R3C">
+                                <frame key="frameInset" minX="-69" minY="33" width="512" height="512"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="GAME OVERx512.png"/>
+                                <connections>
+                                    <action selector="ReturnToMenu:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="bX2-Ft-HWo"/>
+                                    <segue destination="QKJ-Fo-W12" kind="show" id="KfA-ll-WMu"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Final Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKa-e4-9E7">
+                                <frame key="frameInset" minX="91" minY="486" width="200" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CurrentScore" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UM0-Jn-aou">
+                                <frame key="frameInset" minX="91" minY="64" width="200" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UzJ-hr-Cot">
+                                <frame key="frameInset" minX="330" minY="562" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.06950727541" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="BAD"/>
+                                <connections>
+                                    <action selector="EnemyAttack:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="pxB-Ms-CuI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
                     <connections>
+                        <outlet property="CurrentScoreLabel" destination="UM0-Jn-aou" id="hCh-03-zzV"/>
                         <outlet property="EnemyAttackOutlet1" destination="UzJ-hr-Cot" id="TgD-kP-vdw"/>
                         <outlet property="EnemyAttackOutlet2" destination="pmb-O7-3mb" id="Nmc-ti-yvj"/>
                         <outlet property="EnemyAttackOutlet3" destination="B6e-G4-IpE" id="JMl-ma-zRi"/>
@@ -222,9 +254,11 @@
                         <outlet property="EnemyImage" destination="eyA-Lt-zzx" id="kPp-OC-uNu"/>
                         <outlet property="EnemyIndicator1" destination="o7A-cl-bpB" id="3K4-FC-eDO"/>
                         <outlet property="EnemyIndicator2" destination="wmW-uN-Lwy" id="Akr-Ps-h5p"/>
+                        <outlet property="FinalScoreLabel" destination="BKa-e4-9E7" id="X9E-au-PvN"/>
                         <outlet property="PlayerAttackOutlet" destination="yPx-hm-kQG" id="z4R-tb-YNq"/>
                         <outlet property="PlayerHPBackground" destination="Zuw-oo-2K2" id="DOF-jt-LvX"/>
                         <outlet property="PlayerHPBar" destination="Ri7-e2-agI" id="tYf-nB-xVp"/>
+                        <outlet property="ReturnToMenuOutlet" destination="Ec0-Xj-R3C" id="Oqx-1H-JBf"/>
                         <outlet property="SelectEnemyType1Outlet" destination="ALN-ex-Is7" id="AJ7-G1-532"/>
                         <outlet property="SelectEnemyType2Outlet" destination="UEq-7m-Vsz" id="POj-ay-jWW"/>
                         <outlet property="TimerBar" destination="JP6-QY-hqh" id="9Dq-6b-wHP"/>
@@ -232,7 +266,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="409.7451274362819"/>
+            <point key="canvasLocation" x="792.79999999999995" y="390.85457271364322"/>
         </scene>
         <!--Menu Controller-->
         <scene sceneID="Zod-GV-vVs">
@@ -299,11 +333,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Armour upgradex512.png" width="256" height="256"/>
+        <image name="Armour upgradex512.png" width="512" height="512"/>
         <image name="Attack Upgradex512.png" width="512" height="512"/>
         <image name="Bad guyx512.png" width="512" height="512"/>
         <image name="Chestx512.png" width="512" height="256"/>
         <image name="Doorx256.png" width="256" height="256"/>
+        <image name="GAME OVERx512.png" width="512" height="512"/>
         <image name="Health Potionx512.png" width="512" height="512"/>
         <image name="Start Button x128.png" width="128" height="128"/>
         <image name="first" width="30" height="30"/>

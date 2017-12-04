@@ -49,6 +49,7 @@
 		E1B510661FD5AA4F007C0E85 /* Torch.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510631FD5AA4F007C0E85 /* Torch.png */; };
 		E1B510671FD5AA4F007C0E85 /* Torch2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510641FD5AA4F007C0E85 /* Torch2x.png */; };
 		E1B510681FD5AA4F007C0E85 /* Torch4x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510651FD5AA4F007C0E85 /* Torch4x.png */; };
+		E1B5106B1FD5BCA6007C0E85 /* SaveData.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B5106A1FD5BCA6007C0E85 /* SaveData.m */; };
 		E1DA93B11FC47E380058DD9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DA93B01FC47E380058DD9B /* main.m */; };
 		E1DA93B41FC47E380058DD9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DA93B31FC47E380058DD9B /* AppDelegate.m */; };
 		E1DA93B71FC47E380058DD9B /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DA93B61FC47E380058DD9B /* ShopViewController.m */; };
@@ -122,6 +123,8 @@
 		E1B510631FD5AA4F007C0E85 /* Torch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Torch.png; path = Assets/Torch/Torch.png; sourceTree = "<group>"; };
 		E1B510641FD5AA4F007C0E85 /* Torch2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Torch2x.png; path = Assets/Torch/Torch2x.png; sourceTree = "<group>"; };
 		E1B510651FD5AA4F007C0E85 /* Torch4x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Torch4x.png; path = Assets/Torch/Torch4x.png; sourceTree = "<group>"; };
+		E1B510691FD5BCA6007C0E85 /* SaveData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveData.h; sourceTree = "<group>"; };
+		E1B5106A1FD5BCA6007C0E85 /* SaveData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveData.m; sourceTree = "<group>"; };
 		E1DA93AC1FC47E380058DD9B /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1DA93B01FC47E380058DD9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E1DA93B21FC47E380058DD9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -250,6 +253,8 @@
 				E1DA93B81FC47E380058DD9B /* GameViewController.h */,
 				E1DA93B91FC47E380058DD9B /* GameViewController.m */,
 				E1DA93BB1FC47E380058DD9B /* Main.storyboard */,
+				E1B510691FD5BCA6007C0E85 /* SaveData.h */,
+				E1B5106A1FD5BCA6007C0E85 /* SaveData.m */,
 				E1DA93E81FC4848F0058DD9B /* PlayerData.h */,
 				E1DA93E91FC4848F0058DD9B /* PlayerData.m */,
 				E1DA93E51FC480690058DD9B /* MenuController.h */,
@@ -466,6 +471,7 @@
 			files = (
 				E1DA93BA1FC47E380058DD9B /* GameViewController.m in Sources */,
 				E1DA93B41FC47E380058DD9B /* AppDelegate.m in Sources */,
+				E1B5106B1FD5BCA6007C0E85 /* SaveData.m in Sources */,
 				E1DA93EA1FC4848F0058DD9B /* PlayerData.m in Sources */,
 				E1DA93E71FC480690058DD9B /* MenuController.m in Sources */,
 				E1DA93B71FC47E380058DD9B /* ShopViewController.m in Sources */,

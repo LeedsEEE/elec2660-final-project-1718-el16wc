@@ -22,6 +22,7 @@
     self.HealthLabel.text = [NSString stringWithFormat:@"%.0f HP",[data HP]];
     self.AttackLabel.text = [NSString stringWithFormat:@"%d AP",[data AttackPower]];
     self.CoinLabel.text = [NSString stringWithFormat:@"%.0f Gold",[data Coins]];
+    self.ScoreLabel.text = [NSString stringWithFormat:@"Score : %.0f",[data Score]];
     // Do any additional setup after loading the view, typically from a nib.
 }
 -(void)viewDidAppear:(BOOL)animated{
@@ -31,6 +32,7 @@
     self.HealthLabel.text = [NSString stringWithFormat:@"%.0f HP",[data HP]];
     self.AttackLabel.text = [NSString stringWithFormat:@"%d AP",[data AttackPower]];
     self.CoinLabel.text = [NSString stringWithFormat:@"%.0f Gold",[data Coins]];
+    self.ScoreLabel.text = [NSString stringWithFormat:@"Score : %.0f",[data Score]];
 }
 
 

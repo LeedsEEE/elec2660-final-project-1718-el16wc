@@ -40,6 +40,10 @@
     PlayerData *data = [PlayerData sharedInstance];
     [data setPlayerName:self.PlayerNameTextField.text ];
     [data setMaxHP:50];
+    [data setHP:50];
+    [data setScore:0];
+    [data setAttackPower:15];
+    [data setCoins:50];
 }
 
 

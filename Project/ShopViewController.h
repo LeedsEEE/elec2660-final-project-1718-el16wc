@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *HealthLabel;
 @property (weak, nonatomic) IBOutlet UILabel *AttackLabel;
 @property (weak, nonatomic) IBOutlet UILabel *CoinLabel;
+@property (weak, nonatomic) IBOutlet UILabel *ScoreLabel;
 
 - (IBAction)HealthPotion:(UIButton *)sender;
 - (IBAction)ArmourUpgrade:(UIButton *)sender;

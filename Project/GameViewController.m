@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    PlayerData *data = [PlayerData sharedInstance];
+    
     
     _Level = 1;
     _MonsterHP = 100;
@@ -42,7 +44,16 @@
     [self.EnemyIndicator2 setFrame:Enemyindicator2Frame];
     [self.SelectEnemyType1Outlet setFrame:SelectEnemyType1OutletFrame];
     [self.SelectEnemyType2Outlet setFrame:SelectEnemyType2OutletFrame];
+    self.ReturnToMenuOutlet.hidden = 1;
+    self.FinalScoreLabel.hidden = 1;
+    self.CurrentScoreLabel.hidden = 0;
     
+
+    CGRect CurrentScoreFrame = [self.CurrentScoreLabel frame];
+    CurrentScoreFrame.origin.x = ScreenWidth*0.5-100;
+    CurrentScoreFrame.origin.y = 0.05* ScreenHeight;
+    [self.CurrentScoreLabel setFrame:CurrentScoreFrame];
+    self.CurrentScoreLabel.text = [NSString stringWithFormat:@"Score : %.0f",[data Score]];
    // [self StartFight];
     
     /*[self UpdateScreen];
@@ -141,6 +152,13 @@
     PlayerHPFrame.origin.x = 0.1 * ScreenWidth;
     PlayerHPFrame.origin.y = 0.9 * ScreenHeight;
     [self.PlayerHPBar setFrame:PlayerHPFrame];
+    
+    CGRect CurrentScoreFrame = [self.CurrentScoreLabel frame];
+    CurrentScoreFrame.origin.x = ScreenWidth*0.5-100;
+    CurrentScoreFrame.origin.y = 0.05* ScreenHeight;
+    [self.CurrentScoreLabel setFrame:CurrentScoreFrame];
+    self.CurrentScoreLabel.text = [NSString stringWithFormat:@"Score : %.0f",[data Score]];
+    
     
     
     //updating Button Positions
@@ -270,11 +288,48 @@
 - (void)GAMEOVER{
     PlayerData *data = [PlayerData sharedInstance];
     [data setHP:0];
+    CGRect Screen = [[UIScreen mainScreen] bounds];
+    float ScreenWidth = CGRectGetWidth(Screen);
+    float ScreenHeight = CGRectGetHeight(Screen);
+    self.PlayerAttackOutlet.hidden = 1;
+    self.EnemyAttackOutlet1.hidden = 1;
+    self.EnemyAttackOutlet2.hidden = 1;
+    self.EnemyAttackOutlet3.hidden = 1;
+    self.EnemyImage.hidden = 1;
+    self.TimerBar.hidden = 1;
+    self.PlayerHPBar.hidden = 1;
+    self.PlayerHPBackground.hidden = 1;
+    self.EnemyHPBar.hidden = 1;
+    self.EnemyHPBackground.hidden = 1;
+    
+    self.EnemyIndicator1.hidden = 1;
+    self.EnemyIndicator2.hidden = 1;
+    self.SelectEnemyType1Outlet.hidden = 1;
+    self.SelectEnemyType2Outlet.hidden = 1;
+    self.CurrentScoreLabel.hidden = 1;
+    
+    [data setScore:[data Score] + [data Coins]];
+    
+    CGRect GameOverFrame = [self.ReturnToMenuOutlet frame];
+    GameOverFrame.origin.x = ScreenWidth * 0.5 - 256;
+    GameOverFrame.origin.y = ScreenHeight * 0.5 - 256;
+    [self.ReturnToMenuOutlet setFrame:GameOverFrame];
+    
+    self.FinalScoreLabel.text = [NSString stringWithFormat:@"Final Score : %.0f",[data Score]];
+    CGRect FinalScoreLabelFrame = [self.FinalScoreLabel frame];
+    FinalScoreLabelFrame.origin.x = 0.5 * ScreenWidth - 100;
+    FinalScoreLabelFrame.origin.y = 0.8 * ScreenHeight;
+    
+    self.ReturnToMenuOutlet.hidden = 0;
+    self.FinalScoreLabel.hidden = 0;
+    
+    
 
 }
 -(void)onTick:(NSTimer *)timer {
-    
+    PlayerData *data = [PlayerData sharedInstance];
     _TimeRemaining = _TimeRemaining -1;
+    
     
     [self UpdateScreen];
     
@@ -282,7 +337,14 @@
         [timer invalidate];
         timer = nil;
         NSLog(@"!G A M E  O V E R!");
+        [self GAMEOVER];
         }
+    if ([data HP] <= 0){
+        [timer invalidate];
+        timer = nil;
+        NSLog(@"!G A M E  O V E R!");
+        [self GAMEOVER];
+    }
     if (_MonsterHP <= 0){
         [timer invalidate];
         timer = nil;
@@ -382,11 +444,14 @@
     [self.EnemyIndicator2 setFrame:Enemyindicator2Frame];
     [self.SelectEnemyType1Outlet setFrame:SelectEnemyType1OutletFrame];
     [self.SelectEnemyType2Outlet setFrame:SelectEnemyType2OutletFrame];
+    self.CurrentScoreLabel.text = [NSString stringWithFormat:@"Score : %.0f",[data Score]];
     
     
     _Level++;
     
 }
+
+
 
 
 
@@ -407,12 +472,24 @@
 }
 
 - (IBAction)SelectEnemyType2:(UIButton *)sender {
-    _Monstertype = 2;
-    [self StartFight];
+    PlayerData *data = [PlayerData sharedInstance];
+    int DiceRoll = 1;
+    DiceRoll = rand() %6;
+    if (DiceRoll == 0){
+        [data setCoins:[data Coins] + 100];
+    }
+    
+    else {
+        _Monstertype = 2;
+        [self StartFight];
+    }
+    
 }
 
 - (IBAction)SelectEnemyType1:(UIButton *)sender {
     _Monstertype = 1;
     [self StartFight];
+}
+- (IBAction)ReturnToMenu:(UIButton *)sender {
 }
 @end
