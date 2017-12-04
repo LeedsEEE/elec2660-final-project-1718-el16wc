@@ -18,13 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdm-5M-LrX">
-                                <frame key="frameInset" minX="160" minY="576" width="133" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPa-jY-gF9">
                                 <frame key="frameInset" minX="233" minY="142" width="93" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -42,7 +35,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNk-k1-W5z">
                                 <frame key="frameInset" minX="16" minY="89" width="128" height="127"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Health Potion x256.png"/>
+                                <state key="normal" title="Button" image="Health Potionx512.png"/>
                                 <connections>
                                     <action selector="HealthPotion:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Zf6-sT-9Ux"/>
                                 </connections>
@@ -50,7 +43,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Aq-V0-Vv3">
                                 <frame key="frameInset" minX="16" minY="226" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Armour upgrade x256.png"/>
+                                <state key="normal" title="Button" image="Armour upgradex512.png"/>
                                 <connections>
                                     <action selector="ArmourUpgrade:" destination="9pv-A4-QxB" eventType="touchUpInside" id="vHj-0v-VUm"/>
                                 </connections>
@@ -58,7 +51,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rte-gB-FyN">
                                 <frame key="frameInset" minX="16" minY="395" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Attack Upgrade x256.png"/>
+                                <state key="normal" title="Button" image="Attack Upgradex512.png"/>
                                 <connections>
                                     <action selector="AttackUpgrade:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Fpq-ne-XFn"/>
                                 </connections>
@@ -72,6 +65,13 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Gold" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEg-5F-t6A">
                                 <frame key="frameInset" minX="128" minY="38" width="138" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdm-5M-LrX">
+                                <frame key="frameInset" minX="88" minY="574" width="199" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -149,8 +149,8 @@
                                     <action selector="EnemyAttack:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="ZeE-W8-ZO3"/>
                                 </connections>
                             </button>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bad guy x512.png" translatesAutoresizingMaskIntoConstraints="NO" id="eyA-Lt-zzx">
-                                <frame key="frameInset" minX="168" minY="518" width="256" height="256"/>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bad guyx512.png" translatesAutoresizingMaskIntoConstraints="NO" id="eyA-Lt-zzx">
+                                <frame key="frameInset" minX="153" minY="526" width="256" height="256"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zuw-oo-2K2">
@@ -186,27 +186,27 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEq-7m-Vsz">
-                                <frame key="frameInset" minX="175" minY="164" width="200" height="200"/>
+                                <frame key="frameInset" minX="153" minY="98" width="256" height="256"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Door x256.png"/>
+                                <state key="normal" title="Button" image="Doorx256.png"/>
                                 <connections>
                                     <action selector="SelectEnemyType2:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="ZDc-kY-4Zx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALN-ex-Is7">
-                                <frame key="frameInset" minY="164" width="200" height="200"/>
+                                <frame key="frameInset" minX="-35" minY="98" width="256" height="256"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Door x256.png"/>
+                                <state key="normal" title="Button" image="Doorx256.png"/>
                                 <connections>
                                     <action selector="SelectEnemyType1:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="d40-hO-bnF"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bad guy x512.png" translatesAutoresizingMaskIntoConstraints="NO" id="o7A-cl-bpB">
-                                <frame key="frameInset" minX="29" minY="372" width="128" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bad guyx512.png" translatesAutoresizingMaskIntoConstraints="NO" id="o7A-cl-bpB">
+                                <frame key="frameInset" minX="23" minY="362" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Chest x256.png" translatesAutoresizingMaskIntoConstraints="NO" id="wmW-uN-Lwy">
-                                <frame key="frameInset" minX="209" minY="372" width="128" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Chestx512.png" translatesAutoresizingMaskIntoConstraints="NO" id="wmW-uN-Lwy">
+                                <frame key="frameInset" minX="209" minY="404" width="128" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -246,15 +246,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6W-df-1tr">
-                                <frame key="frameInset" minX="170" minY="287" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Start"/>
-                                <connections>
-                                    <action selector="StartGame:" destination="QKJ-Fo-W12" eventType="touchUpInside" id="Mdp-4g-f7V"/>
-                                    <segue destination="49e-Tb-3d3" kind="show" id="67x-3D-3DX"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Insert Player Name" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EYb-Dj-jfk">
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -263,6 +254,15 @@
                                     <outlet property="delegate" destination="QKJ-Fo-W12" id="ozi-6i-esF"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6W-df-1tr">
+                                <frame key="frameInset" minX="123" minY="174" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Start Button x128.png"/>
+                                <connections>
+                                    <action selector="StartGame:" destination="QKJ-Fo-W12" eventType="touchUpInside" id="Mdp-4g-f7V"/>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="67x-3D-3DX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -299,12 +299,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Armour upgrade x256.png" width="256" height="256"/>
-        <image name="Attack Upgrade x256.png" width="256" height="256"/>
-        <image name="Bad guy x512.png" width="512" height="512"/>
-        <image name="Chest x256.png" width="256" height="256"/>
-        <image name="Door x256.png" width="256" height="256"/>
-        <image name="Health Potion x256.png" width="256" height="256"/>
+        <image name="Armour upgradex512.png" width="256" height="256"/>
+        <image name="Attack Upgradex512.png" width="512" height="512"/>
+        <image name="Bad guyx512.png" width="512" height="512"/>
+        <image name="Chestx512.png" width="512" height="256"/>
+        <image name="Doorx256.png" width="256" height="256"/>
+        <image name="Health Potionx512.png" width="512" height="512"/>
+        <image name="Start Button x128.png" width="128" height="128"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>

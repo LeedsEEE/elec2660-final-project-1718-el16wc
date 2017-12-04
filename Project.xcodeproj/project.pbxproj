@@ -7,6 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1B510151FD5A910007C0E85 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = E1B510141FD5A910007C0E85 /* Assets */; };
+		E1B510181FD5A94F007C0E85 /* Adventure Tab.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510171FD5A94F007C0E85 /* Adventure Tab.png */; };
+		E1B5101D1FD5A9A3007C0E85 /* Armour upgrade.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510191FD5A9A3007C0E85 /* Armour upgrade.png */; };
+		E1B5101E1FD5A9A3007C0E85 /* Armour upgradex128.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B5101A1FD5A9A3007C0E85 /* Armour upgradex128.png */; };
+		E1B5101F1FD5A9A3007C0E85 /* Armour upgradex256.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B5101B1FD5A9A3007C0E85 /* Armour upgradex256.png */; };
+		E1B510201FD5A9A3007C0E85 /* Armour upgradex512.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B5101C1FD5A9A3007C0E85 /* Armour upgradex512.png */; };
+		E1B510251FD5A9AC007C0E85 /* Attack Upgrade.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510211FD5A9AC007C0E85 /* Attack Upgrade.png */; };
+		E1B510261FD5A9AC007C0E85 /* Attack Upgradex128.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510221FD5A9AC007C0E85 /* Attack Upgradex128.png */; };
+		E1B510271FD5A9AC007C0E85 /* Attack Upgradex256.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510231FD5A9AC007C0E85 /* Attack Upgradex256.png */; };
+		E1B510281FD5A9AC007C0E85 /* Attack Upgradex512.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510241FD5A9AC007C0E85 /* Attack Upgradex512.png */; };
+		E1B5102C1FD5A9B4007C0E85 /* Bad guy.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510291FD5A9B4007C0E85 /* Bad guy.png */; };
+		E1B5102D1FD5A9B4007C0E85 /* Bad guyx256.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B5102A1FD5A9B4007C0E85 /* Bad guyx256.png */; };
+		E1B5102E1FD5A9B4007C0E85 /* Bad guyx512.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B5102B1FD5A9B4007C0E85 /* Bad guyx512.png */; };
+		E1B510331FD5A9BC007C0E85 /* Chest.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B5102F1FD5A9BC007C0E85 /* Chest.png */; };
+		E1B510341FD5A9BC007C0E85 /* Chestx128.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510301FD5A9BC007C0E85 /* Chestx128.png */; };
+		E1B510351FD5A9BC007C0E85 /* Chestx256.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510311FD5A9BC007C0E85 /* Chestx256.png */; };
+		E1B510361FD5A9BC007C0E85 /* Chestx512.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510321FD5A9BC007C0E85 /* Chestx512.png */; };
+		E1B5103B1FD5A9C5007C0E85 /* Door.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510371FD5A9C5007C0E85 /* Door.png */; };
+		E1B5103C1FD5A9C5007C0E85 /* Doorx128.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510381FD5A9C5007C0E85 /* Doorx128.png */; };
+		E1B5103D1FD5A9C5007C0E85 /* Doorx256.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510391FD5A9C5007C0E85 /* Doorx256.png */; };
+		E1B5103E1FD5A9C5007C0E85 /* Doorx512.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B5103A1FD5A9C5007C0E85 /* Doorx512.png */; };
+		E1B510411FD5A9CD007C0E85 /* GAME OVER.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B5103F1FD5A9CD007C0E85 /* GAME OVER.png */; };
+		E1B510421FD5A9CD007C0E85 /* GAME OVERx512.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510401FD5A9CD007C0E85 /* GAME OVERx512.png */; };
+		E1B510471FD5A9DD007C0E85 /* Health Potion.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510431FD5A9DD007C0E85 /* Health Potion.png */; };
+		E1B510481FD5A9DD007C0E85 /* Health Potionx128.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510441FD5A9DD007C0E85 /* Health Potionx128.png */; };
+		E1B510491FD5A9DD007C0E85 /* Health Potionx256.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510451FD5A9DD007C0E85 /* Health Potionx256.png */; };
+		E1B5104A1FD5A9DD007C0E85 /* Health Potionx512.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510461FD5A9DD007C0E85 /* Health Potionx512.png */; };
+		E1B5104F1FD5A9EA007C0E85 /* Mimic.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B5104B1FD5A9EA007C0E85 /* Mimic.png */; };
+		E1B510501FD5A9EA007C0E85 /* Mimicx128.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B5104C1FD5A9EA007C0E85 /* Mimicx128.png */; };
+		E1B510511FD5A9EA007C0E85 /* Mimicx256.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B5104D1FD5A9EA007C0E85 /* Mimicx256.png */; };
+		E1B510521FD5A9EA007C0E85 /* Mimicx512.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B5104E1FD5A9EA007C0E85 /* Mimicx512.png */; };
+		E1B510551FD5A9F2007C0E85 /* Shop image.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510531FD5A9F2007C0E85 /* Shop image.png */; };
+		E1B510561FD5A9F2007C0E85 /* Shop tab.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510541FD5A9F2007C0E85 /* Shop tab.png */; };
+		E1B5105A1FD5A9FB007C0E85 /* Start Button x128.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510571FD5A9FB007C0E85 /* Start Button x128.png */; };
+		E1B5105B1FD5A9FB007C0E85 /* Start Button.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510581FD5A9FB007C0E85 /* Start Button.png */; };
+		E1B5105C1FD5A9FB007C0E85 /* Start Buttonx256.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510591FD5A9FB007C0E85 /* Start Buttonx256.png */; };
+		E1B510601FD5AA07007C0E85 /* Title Bar x128.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B5105D1FD5AA07007C0E85 /* Title Bar x128.png */; };
+		E1B510611FD5AA07007C0E85 /* Title Bar x256.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B5105E1FD5AA07007C0E85 /* Title Bar x256.png */; };
+		E1B510621FD5AA07007C0E85 /* Title Bar.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B5105F1FD5AA07007C0E85 /* Title Bar.png */; };
+		E1B510661FD5AA4F007C0E85 /* Torch.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510631FD5AA4F007C0E85 /* Torch.png */; };
+		E1B510671FD5AA4F007C0E85 /* Torch2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510641FD5AA4F007C0E85 /* Torch2x.png */; };
+		E1B510681FD5AA4F007C0E85 /* Torch4x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510651FD5AA4F007C0E85 /* Torch4x.png */; };
 		E1DA93B11FC47E380058DD9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DA93B01FC47E380058DD9B /* main.m */; };
 		E1DA93B41FC47E380058DD9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DA93B31FC47E380058DD9B /* AppDelegate.m */; };
 		E1DA93B71FC47E380058DD9B /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DA93B61FC47E380058DD9B /* ShopViewController.m */; };
@@ -18,22 +60,6 @@
 		E1DA93D81FC47E380058DD9B /* ProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DA93D71FC47E380058DD9B /* ProjectUITests.m */; };
 		E1DA93E71FC480690058DD9B /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DA93E61FC480690058DD9B /* MenuController.m */; };
 		E1DA93EA1FC4848F0058DD9B /* PlayerData.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DA93E91FC4848F0058DD9B /* PlayerData.m */; };
-		E1DA93EC1FC48DD20058DD9B /* Sprites in Resources */ = {isa = PBXBuildFile; fileRef = E1DA93EB1FC48DD20058DD9B /* Sprites */; };
-		E1DA941A1FC490600058DD9B /* Armour upgrade x256.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DA940B1FC490600058DD9B /* Armour upgrade x256.png */; };
-		E1DA941B1FC490600058DD9B /* Armour upgrade.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DA940C1FC490600058DD9B /* Armour upgrade.png */; };
-		E1DA941C1FC490600058DD9B /* Attack Upgrade x256.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DA940D1FC490600058DD9B /* Attack Upgrade x256.png */; };
-		E1DA941D1FC490600058DD9B /* Attack Upgrade.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DA940E1FC490600058DD9B /* Attack Upgrade.png */; };
-		E1DA941E1FC490600058DD9B /* Bad guy x512.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DA940F1FC490600058DD9B /* Bad guy x512.png */; };
-		E1DA941F1FC490600058DD9B /* Bad guy.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DA94101FC490600058DD9B /* Bad guy.png */; };
-		E1DA94201FC490600058DD9B /* Chest x128.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DA94111FC490600058DD9B /* Chest x128.png */; };
-		E1DA94211FC490600058DD9B /* Chest x256.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DA94121FC490600058DD9B /* Chest x256.png */; };
-		E1DA94221FC490600058DD9B /* Chest.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DA94131FC490600058DD9B /* Chest.png */; };
-		E1DA94231FC490600058DD9B /* Door x128.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DA94141FC490600058DD9B /* Door x128.png */; };
-		E1DA94241FC490600058DD9B /* Door x256.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DA94151FC490600058DD9B /* Door x256.png */; };
-		E1DA94251FC490600058DD9B /* Door.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DA94161FC490600058DD9B /* Door.png */; };
-		E1DA94261FC490600058DD9B /* GAME OVER x512.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DA94171FC490600058DD9B /* GAME OVER x512.png */; };
-		E1DA94271FC490600058DD9B /* GAME OVER.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DA94181FC490600058DD9B /* GAME OVER.png */; };
-		E1DA94281FC490600058DD9B /* Health Potion x256.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DA94191FC490600058DD9B /* Health Potion x256.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +80,48 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E1B510141FD5A910007C0E85 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
+		E1B510171FD5A94F007C0E85 /* Adventure Tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Adventure Tab.png"; path = "Assets/Adventure Tab.png"; sourceTree = "<group>"; };
+		E1B510191FD5A9A3007C0E85 /* Armour upgrade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Armour upgrade.png"; path = "Assets/Armour Upgrade/Armour upgrade.png"; sourceTree = "<group>"; };
+		E1B5101A1FD5A9A3007C0E85 /* Armour upgradex128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Armour upgradex128.png"; path = "Assets/Armour Upgrade/Armour upgradex128.png"; sourceTree = "<group>"; };
+		E1B5101B1FD5A9A3007C0E85 /* Armour upgradex256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Armour upgradex256.png"; path = "Assets/Armour Upgrade/Armour upgradex256.png"; sourceTree = "<group>"; };
+		E1B5101C1FD5A9A3007C0E85 /* Armour upgradex512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Armour upgradex512.png"; path = "Assets/Armour Upgrade/Armour upgradex512.png"; sourceTree = "<group>"; };
+		E1B510211FD5A9AC007C0E85 /* Attack Upgrade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Attack Upgrade.png"; path = "Assets/Attack Upgrade/Attack Upgrade.png"; sourceTree = "<group>"; };
+		E1B510221FD5A9AC007C0E85 /* Attack Upgradex128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Attack Upgradex128.png"; path = "Assets/Attack Upgrade/Attack Upgradex128.png"; sourceTree = "<group>"; };
+		E1B510231FD5A9AC007C0E85 /* Attack Upgradex256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Attack Upgradex256.png"; path = "Assets/Attack Upgrade/Attack Upgradex256.png"; sourceTree = "<group>"; };
+		E1B510241FD5A9AC007C0E85 /* Attack Upgradex512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Attack Upgradex512.png"; path = "Assets/Attack Upgrade/Attack Upgradex512.png"; sourceTree = "<group>"; };
+		E1B510291FD5A9B4007C0E85 /* Bad guy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bad guy.png"; path = "Assets/Bad Guy/Bad guy.png"; sourceTree = "<group>"; };
+		E1B5102A1FD5A9B4007C0E85 /* Bad guyx256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bad guyx256.png"; path = "Assets/Bad Guy/Bad guyx256.png"; sourceTree = "<group>"; };
+		E1B5102B1FD5A9B4007C0E85 /* Bad guyx512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bad guyx512.png"; path = "Assets/Bad Guy/Bad guyx512.png"; sourceTree = "<group>"; };
+		E1B5102F1FD5A9BC007C0E85 /* Chest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Chest.png; path = Assets/Chest/Chest.png; sourceTree = "<group>"; };
+		E1B510301FD5A9BC007C0E85 /* Chestx128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Chestx128.png; path = Assets/Chest/Chestx128.png; sourceTree = "<group>"; };
+		E1B510311FD5A9BC007C0E85 /* Chestx256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Chestx256.png; path = Assets/Chest/Chestx256.png; sourceTree = "<group>"; };
+		E1B510321FD5A9BC007C0E85 /* Chestx512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Chestx512.png; path = Assets/Chest/Chestx512.png; sourceTree = "<group>"; };
+		E1B510371FD5A9C5007C0E85 /* Door.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Door.png; path = Assets/Door/Door.png; sourceTree = "<group>"; };
+		E1B510381FD5A9C5007C0E85 /* Doorx128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Doorx128.png; path = Assets/Door/Doorx128.png; sourceTree = "<group>"; };
+		E1B510391FD5A9C5007C0E85 /* Doorx256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Doorx256.png; path = Assets/Door/Doorx256.png; sourceTree = "<group>"; };
+		E1B5103A1FD5A9C5007C0E85 /* Doorx512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Doorx512.png; path = Assets/Door/Doorx512.png; sourceTree = "<group>"; };
+		E1B5103F1FD5A9CD007C0E85 /* GAME OVER.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "GAME OVER.png"; path = "Assets/GAME OVER/GAME OVER.png"; sourceTree = "<group>"; };
+		E1B510401FD5A9CD007C0E85 /* GAME OVERx512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "GAME OVERx512.png"; path = "Assets/GAME OVER/GAME OVERx512.png"; sourceTree = "<group>"; };
+		E1B510431FD5A9DD007C0E85 /* Health Potion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Health Potion.png"; path = "Assets/Health Potion/Health Potion.png"; sourceTree = "<group>"; };
+		E1B510441FD5A9DD007C0E85 /* Health Potionx128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Health Potionx128.png"; path = "Assets/Health Potion/Health Potionx128.png"; sourceTree = "<group>"; };
+		E1B510451FD5A9DD007C0E85 /* Health Potionx256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Health Potionx256.png"; path = "Assets/Health Potion/Health Potionx256.png"; sourceTree = "<group>"; };
+		E1B510461FD5A9DD007C0E85 /* Health Potionx512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Health Potionx512.png"; path = "Assets/Health Potion/Health Potionx512.png"; sourceTree = "<group>"; };
+		E1B5104B1FD5A9EA007C0E85 /* Mimic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Mimic.png; path = Assets/Mimic/Mimic.png; sourceTree = "<group>"; };
+		E1B5104C1FD5A9EA007C0E85 /* Mimicx128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Mimicx128.png; path = Assets/Mimic/Mimicx128.png; sourceTree = "<group>"; };
+		E1B5104D1FD5A9EA007C0E85 /* Mimicx256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Mimicx256.png; path = Assets/Mimic/Mimicx256.png; sourceTree = "<group>"; };
+		E1B5104E1FD5A9EA007C0E85 /* Mimicx512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Mimicx512.png; path = Assets/Mimic/Mimicx512.png; sourceTree = "<group>"; };
+		E1B510531FD5A9F2007C0E85 /* Shop image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Shop image.png"; path = "Assets/Shop image.png"; sourceTree = "<group>"; };
+		E1B510541FD5A9F2007C0E85 /* Shop tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Shop tab.png"; path = "Assets/Shop tab.png"; sourceTree = "<group>"; };
+		E1B510571FD5A9FB007C0E85 /* Start Button x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Start Button x128.png"; path = "Assets/Start Button/Start Button x128.png"; sourceTree = "<group>"; };
+		E1B510581FD5A9FB007C0E85 /* Start Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Start Button.png"; path = "Assets/Start Button/Start Button.png"; sourceTree = "<group>"; };
+		E1B510591FD5A9FB007C0E85 /* Start Buttonx256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Start Buttonx256.png"; path = "Assets/Start Button/Start Buttonx256.png"; sourceTree = "<group>"; };
+		E1B5105D1FD5AA07007C0E85 /* Title Bar x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Title Bar x128.png"; path = "Assets/Title Bar/Title Bar x128.png"; sourceTree = "<group>"; };
+		E1B5105E1FD5AA07007C0E85 /* Title Bar x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Title Bar x256.png"; path = "Assets/Title Bar/Title Bar x256.png"; sourceTree = "<group>"; };
+		E1B5105F1FD5AA07007C0E85 /* Title Bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Title Bar.png"; path = "Assets/Title Bar/Title Bar.png"; sourceTree = "<group>"; };
+		E1B510631FD5AA4F007C0E85 /* Torch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Torch.png; path = Assets/Torch/Torch.png; sourceTree = "<group>"; };
+		E1B510641FD5AA4F007C0E85 /* Torch2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Torch2x.png; path = Assets/Torch/Torch2x.png; sourceTree = "<group>"; };
+		E1B510651FD5AA4F007C0E85 /* Torch4x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Torch4x.png; path = Assets/Torch/Torch4x.png; sourceTree = "<group>"; };
 		E1DA93AC1FC47E380058DD9B /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1DA93B01FC47E380058DD9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E1DA93B21FC47E380058DD9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -76,22 +144,6 @@
 		E1DA93E61FC480690058DD9B /* MenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
 		E1DA93E81FC4848F0058DD9B /* PlayerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerData.h; sourceTree = "<group>"; };
 		E1DA93E91FC4848F0058DD9B /* PlayerData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerData.m; sourceTree = "<group>"; };
-		E1DA93EB1FC48DD20058DD9B /* Sprites */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sprites; sourceTree = "<group>"; };
-		E1DA940B1FC490600058DD9B /* Armour upgrade x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Armour upgrade x256.png"; path = "Sprites/Armour upgrade x256.png"; sourceTree = "<group>"; };
-		E1DA940C1FC490600058DD9B /* Armour upgrade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Armour upgrade.png"; path = "Sprites/Armour upgrade.png"; sourceTree = "<group>"; };
-		E1DA940D1FC490600058DD9B /* Attack Upgrade x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Attack Upgrade x256.png"; path = "Sprites/Attack Upgrade x256.png"; sourceTree = "<group>"; };
-		E1DA940E1FC490600058DD9B /* Attack Upgrade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Attack Upgrade.png"; path = "Sprites/Attack Upgrade.png"; sourceTree = "<group>"; };
-		E1DA940F1FC490600058DD9B /* Bad guy x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bad guy x512.png"; path = "Sprites/Bad guy x512.png"; sourceTree = "<group>"; };
-		E1DA94101FC490600058DD9B /* Bad guy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bad guy.png"; path = "Sprites/Bad guy.png"; sourceTree = "<group>"; };
-		E1DA94111FC490600058DD9B /* Chest x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Chest x128.png"; path = "Sprites/Chest x128.png"; sourceTree = "<group>"; };
-		E1DA94121FC490600058DD9B /* Chest x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Chest x256.png"; path = "Sprites/Chest x256.png"; sourceTree = "<group>"; };
-		E1DA94131FC490600058DD9B /* Chest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Chest.png; path = Sprites/Chest.png; sourceTree = "<group>"; };
-		E1DA94141FC490600058DD9B /* Door x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Door x128.png"; path = "Sprites/Door x128.png"; sourceTree = "<group>"; };
-		E1DA94151FC490600058DD9B /* Door x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Door x256.png"; path = "Sprites/Door x256.png"; sourceTree = "<group>"; };
-		E1DA94161FC490600058DD9B /* Door.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Door.png; path = Sprites/Door.png; sourceTree = "<group>"; };
-		E1DA94171FC490600058DD9B /* GAME OVER x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "GAME OVER x512.png"; path = "Sprites/GAME OVER x512.png"; sourceTree = "<group>"; };
-		E1DA94181FC490600058DD9B /* GAME OVER.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "GAME OVER.png"; path = "Sprites/GAME OVER.png"; sourceTree = "<group>"; };
-		E1DA94191FC490600058DD9B /* Health Potion x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Health Potion x256.png"; path = "Sprites/Health Potion x256.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +171,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E1B510161FD5A941007C0E85 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E1B510171FD5A94F007C0E85 /* Adventure Tab.png */,
+				E1B510191FD5A9A3007C0E85 /* Armour upgrade.png */,
+				E1B5101A1FD5A9A3007C0E85 /* Armour upgradex128.png */,
+				E1B5101B1FD5A9A3007C0E85 /* Armour upgradex256.png */,
+				E1B5101C1FD5A9A3007C0E85 /* Armour upgradex512.png */,
+				E1B510211FD5A9AC007C0E85 /* Attack Upgrade.png */,
+				E1B510221FD5A9AC007C0E85 /* Attack Upgradex128.png */,
+				E1B510231FD5A9AC007C0E85 /* Attack Upgradex256.png */,
+				E1B510241FD5A9AC007C0E85 /* Attack Upgradex512.png */,
+				E1B510291FD5A9B4007C0E85 /* Bad guy.png */,
+				E1B5102A1FD5A9B4007C0E85 /* Bad guyx256.png */,
+				E1B5102B1FD5A9B4007C0E85 /* Bad guyx512.png */,
+				E1B5102F1FD5A9BC007C0E85 /* Chest.png */,
+				E1B510301FD5A9BC007C0E85 /* Chestx128.png */,
+				E1B510311FD5A9BC007C0E85 /* Chestx256.png */,
+				E1B510321FD5A9BC007C0E85 /* Chestx512.png */,
+				E1B510371FD5A9C5007C0E85 /* Door.png */,
+				E1B510381FD5A9C5007C0E85 /* Doorx128.png */,
+				E1B510391FD5A9C5007C0E85 /* Doorx256.png */,
+				E1B5103A1FD5A9C5007C0E85 /* Doorx512.png */,
+				E1B5103F1FD5A9CD007C0E85 /* GAME OVER.png */,
+				E1B510401FD5A9CD007C0E85 /* GAME OVERx512.png */,
+				E1B510431FD5A9DD007C0E85 /* Health Potion.png */,
+				E1B510441FD5A9DD007C0E85 /* Health Potionx128.png */,
+				E1B510451FD5A9DD007C0E85 /* Health Potionx256.png */,
+				E1B510461FD5A9DD007C0E85 /* Health Potionx512.png */,
+				E1B5104B1FD5A9EA007C0E85 /* Mimic.png */,
+				E1B5104C1FD5A9EA007C0E85 /* Mimicx128.png */,
+				E1B5104D1FD5A9EA007C0E85 /* Mimicx256.png */,
+				E1B5104E1FD5A9EA007C0E85 /* Mimicx512.png */,
+				E1B510531FD5A9F2007C0E85 /* Shop image.png */,
+				E1B510541FD5A9F2007C0E85 /* Shop tab.png */,
+				E1B510571FD5A9FB007C0E85 /* Start Button x128.png */,
+				E1B510581FD5A9FB007C0E85 /* Start Button.png */,
+				E1B510591FD5A9FB007C0E85 /* Start Buttonx256.png */,
+				E1B5105D1FD5AA07007C0E85 /* Title Bar x128.png */,
+				E1B5105E1FD5AA07007C0E85 /* Title Bar x256.png */,
+				E1B5105F1FD5AA07007C0E85 /* Title Bar.png */,
+				E1B510631FD5AA4F007C0E85 /* Torch.png */,
+				E1B510641FD5AA4F007C0E85 /* Torch2x.png */,
+				E1B510651FD5AA4F007C0E85 /* Torch4x.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		E1DA93A31FC47E380058DD9B = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +242,7 @@
 		E1DA93AE1FC47E380058DD9B /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				E1B510161FD5A941007C0E85 /* Assets */,
 				E1DA93B21FC47E380058DD9B /* AppDelegate.h */,
 				E1DA93B31FC47E380058DD9B /* AppDelegate.m */,
 				E1DA93B51FC47E380058DD9B /* ShopViewController.h */,
@@ -153,8 +254,7 @@
 				E1DA93E91FC4848F0058DD9B /* PlayerData.m */,
 				E1DA93E51FC480690058DD9B /* MenuController.h */,
 				E1DA93E61FC480690058DD9B /* MenuController.m */,
-				E1DA94291FC497D30058DD9B /* Sprites */,
-				E1DA93EB1FC48DD20058DD9B /* Sprites */,
+				E1B510141FD5A910007C0E85 /* Assets */,
 				E1DA93BE1FC47E380058DD9B /* Assets.xcassets */,
 				E1DA93C01FC47E380058DD9B /* LaunchScreen.storyboard */,
 				E1DA93C31FC47E380058DD9B /* Info.plist */,
@@ -187,28 +287,6 @@
 				E1DA93D91FC47E380058DD9B /* Info.plist */,
 			);
 			path = ProjectUITests;
-			sourceTree = "<group>";
-		};
-		E1DA94291FC497D30058DD9B /* Sprites */ = {
-			isa = PBXGroup;
-			children = (
-				E1DA940B1FC490600058DD9B /* Armour upgrade x256.png */,
-				E1DA940C1FC490600058DD9B /* Armour upgrade.png */,
-				E1DA940D1FC490600058DD9B /* Attack Upgrade x256.png */,
-				E1DA940E1FC490600058DD9B /* Attack Upgrade.png */,
-				E1DA940F1FC490600058DD9B /* Bad guy x512.png */,
-				E1DA94101FC490600058DD9B /* Bad guy.png */,
-				E1DA94111FC490600058DD9B /* Chest x128.png */,
-				E1DA94121FC490600058DD9B /* Chest x256.png */,
-				E1DA94131FC490600058DD9B /* Chest.png */,
-				E1DA94141FC490600058DD9B /* Door x128.png */,
-				E1DA94151FC490600058DD9B /* Door x256.png */,
-				E1DA94161FC490600058DD9B /* Door.png */,
-				E1DA94171FC490600058DD9B /* GAME OVER x512.png */,
-				E1DA94181FC490600058DD9B /* GAME OVER.png */,
-				E1DA94191FC490600058DD9B /* Health Potion x256.png */,
-			);
-			name = Sprites;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,25 +395,51 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1DA941E1FC490600058DD9B /* Bad guy x512.png in Resources */,
-				E1DA94241FC490600058DD9B /* Door x256.png in Resources */,
+				E1B510181FD5A94F007C0E85 /* Adventure Tab.png in Resources */,
+				E1B5105B1FD5A9FB007C0E85 /* Start Button.png in Resources */,
+				E1B5105A1FD5A9FB007C0E85 /* Start Button x128.png in Resources */,
+				E1B5102D1FD5A9B4007C0E85 /* Bad guyx256.png in Resources */,
+				E1B510501FD5A9EA007C0E85 /* Mimicx128.png in Resources */,
+				E1B510661FD5AA4F007C0E85 /* Torch.png in Resources */,
+				E1B510421FD5A9CD007C0E85 /* GAME OVERx512.png in Resources */,
+				E1B5103C1FD5A9C5007C0E85 /* Doorx128.png in Resources */,
+				E1B510601FD5AA07007C0E85 /* Title Bar x128.png in Resources */,
+				E1B510261FD5A9AC007C0E85 /* Attack Upgradex128.png in Resources */,
+				E1B510271FD5A9AC007C0E85 /* Attack Upgradex256.png in Resources */,
+				E1B510251FD5A9AC007C0E85 /* Attack Upgrade.png in Resources */,
+				E1B5101E1FD5A9A3007C0E85 /* Armour upgradex128.png in Resources */,
+				E1B510341FD5A9BC007C0E85 /* Chestx128.png in Resources */,
 				E1DA93C21FC47E380058DD9B /* LaunchScreen.storyboard in Resources */,
-				E1DA941F1FC490600058DD9B /* Bad guy.png in Resources */,
-				E1DA94271FC490600058DD9B /* GAME OVER.png in Resources */,
-				E1DA94201FC490600058DD9B /* Chest x128.png in Resources */,
-				E1DA941A1FC490600058DD9B /* Armour upgrade x256.png in Resources */,
-				E1DA94211FC490600058DD9B /* Chest x256.png in Resources */,
-				E1DA93EC1FC48DD20058DD9B /* Sprites in Resources */,
-				E1DA94231FC490600058DD9B /* Door x128.png in Resources */,
-				E1DA941B1FC490600058DD9B /* Armour upgrade.png in Resources */,
-				E1DA94261FC490600058DD9B /* GAME OVER x512.png in Resources */,
-				E1DA941C1FC490600058DD9B /* Attack Upgrade x256.png in Resources */,
-				E1DA941D1FC490600058DD9B /* Attack Upgrade.png in Resources */,
-				E1DA94221FC490600058DD9B /* Chest.png in Resources */,
-				E1DA94281FC490600058DD9B /* Health Potion x256.png in Resources */,
+				E1B510151FD5A910007C0E85 /* Assets in Resources */,
+				E1B510551FD5A9F2007C0E85 /* Shop image.png in Resources */,
+				E1B5103B1FD5A9C5007C0E85 /* Door.png in Resources */,
+				E1B510281FD5A9AC007C0E85 /* Attack Upgradex512.png in Resources */,
+				E1B5101F1FD5A9A3007C0E85 /* Armour upgradex256.png in Resources */,
+				E1B510481FD5A9DD007C0E85 /* Health Potionx128.png in Resources */,
+				E1B5101D1FD5A9A3007C0E85 /* Armour upgrade.png in Resources */,
+				E1B510511FD5A9EA007C0E85 /* Mimicx256.png in Resources */,
 				E1DA93BF1FC47E380058DD9B /* Assets.xcassets in Resources */,
+				E1B510621FD5AA07007C0E85 /* Title Bar.png in Resources */,
+				E1B5104F1FD5A9EA007C0E85 /* Mimic.png in Resources */,
+				E1B510611FD5AA07007C0E85 /* Title Bar x256.png in Resources */,
+				E1B510201FD5A9A3007C0E85 /* Armour upgradex512.png in Resources */,
+				E1B5105C1FD5A9FB007C0E85 /* Start Buttonx256.png in Resources */,
+				E1B510411FD5A9CD007C0E85 /* GAME OVER.png in Resources */,
+				E1B5104A1FD5A9DD007C0E85 /* Health Potionx512.png in Resources */,
+				E1B510561FD5A9F2007C0E85 /* Shop tab.png in Resources */,
+				E1B510681FD5AA4F007C0E85 /* Torch4x.png in Resources */,
+				E1B510671FD5AA4F007C0E85 /* Torch2x.png in Resources */,
+				E1B510331FD5A9BC007C0E85 /* Chest.png in Resources */,
+				E1B5103D1FD5A9C5007C0E85 /* Doorx256.png in Resources */,
+				E1B510491FD5A9DD007C0E85 /* Health Potionx256.png in Resources */,
+				E1B5102C1FD5A9B4007C0E85 /* Bad guy.png in Resources */,
+				E1B5103E1FD5A9C5007C0E85 /* Doorx512.png in Resources */,
+				E1B5102E1FD5A9B4007C0E85 /* Bad guyx512.png in Resources */,
+				E1B510521FD5A9EA007C0E85 /* Mimicx512.png in Resources */,
+				E1B510471FD5A9DD007C0E85 /* Health Potion.png in Resources */,
+				E1B510351FD5A9BC007C0E85 /* Chestx256.png in Resources */,
 				E1DA93BD1FC47E380058DD9B /* Main.storyboard in Resources */,
-				E1DA94251FC490600058DD9B /* Door.png in Resources */,
+				E1B510361FD5A9BC007C0E85 /* Chestx512.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

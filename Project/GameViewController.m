@@ -27,17 +27,17 @@
     float ScreenWidth = CGRectGetWidth(Screen);
     float ScreenHeight = CGRectGetHeight(Screen);
     CGRect Enemyindicator1Frame = [self.EnemyIndicator1 frame];
-    Enemyindicator1Frame.origin.x = 0.13*ScreenWidth;
-    Enemyindicator1Frame.origin.y = 0.55*ScreenHeight;
+    Enemyindicator1Frame.origin.x = 0.25*ScreenWidth-64;
+    Enemyindicator1Frame.origin.y = 0.75*ScreenHeight-64;
     CGRect Enemyindicator2Frame = [self.EnemyIndicator2 frame];
-    Enemyindicator2Frame.origin.x = 0.575*ScreenWidth;
-    Enemyindicator2Frame.origin.y = 0.55*ScreenHeight;
+    Enemyindicator2Frame.origin.x = 0.75*ScreenWidth-64;
+    Enemyindicator2Frame.origin.y = 0.75*ScreenHeight-32;
     CGRect SelectEnemyType1OutletFrame = [self.SelectEnemyType1Outlet frame];
-    SelectEnemyType1OutletFrame.origin.x = 0.05*ScreenWidth;
-    SelectEnemyType1OutletFrame.origin.y = 0.25*ScreenHeight;
+    SelectEnemyType1OutletFrame.origin.x = 0.25*ScreenWidth-128;
+    SelectEnemyType1OutletFrame.origin.y = 0.4*ScreenHeight-128;
     CGRect SelectEnemyType2OutletFrame = [self.SelectEnemyType2Outlet frame];
-    SelectEnemyType2OutletFrame.origin.x = 0.5*ScreenWidth;
-    SelectEnemyType2OutletFrame.origin.y = 0.25*ScreenHeight;
+    SelectEnemyType2OutletFrame.origin.x = 0.75*ScreenWidth-128;
+    SelectEnemyType2OutletFrame.origin.y = 0.4*ScreenHeight-128;
     [self.EnemyIndicator1 setFrame:Enemyindicator1Frame];
     [self.EnemyIndicator2 setFrame:Enemyindicator2Frame];
     [self.SelectEnemyType1Outlet setFrame:SelectEnemyType1OutletFrame];
@@ -91,7 +91,7 @@
     
     //updating Enemy Image
     CGRect EnemyImageFrame = [self.EnemyImage frame];
-    EnemyImageFrame.origin.x = ScreenWidth*0.5 - 128;
+    EnemyImageFrame.origin.x = ScreenWidth*0.45 - 128;
     EnemyImageFrame.origin.y = ScreenHeight* 0.5 - 128;
     [self.EnemyImage setFrame:EnemyImageFrame];
     
@@ -293,6 +293,12 @@
 
 -(void)StartFight{
     [self UpdateScreen];
+    if (_Monstertype == 1){
+        [self.EnemyImage setImage:[UIImage imageNamed:@"Bad guyx512"]];
+    }
+    else {
+        [self.EnemyImage setImage:[UIImage imageNamed:@"Mimicx512"]];
+    }
     _TimeRemaining = 100;
     self.PlayerAttackOutlet.hidden = 0;
     self.EnemyAttackOutlet1.hidden = 0;
@@ -309,6 +315,8 @@
     self.EnemyIndicator2.hidden = 1;
     self.SelectEnemyType1Outlet.hidden = 1;
     self.SelectEnemyType2Outlet.hidden = 1;
+    
+    
     
     [self UpdateScreen];
     
@@ -356,23 +364,24 @@
     float ScreenWidth = CGRectGetWidth(Screen);
     float ScreenHeight = CGRectGetHeight(Screen);
     
+    
+    
     CGRect Enemyindicator1Frame = [self.EnemyIndicator1 frame];
-    Enemyindicator1Frame.origin.x = 0.13*ScreenWidth;
-    Enemyindicator1Frame.origin.y = 0.55*ScreenHeight;
+    Enemyindicator1Frame.origin.x = 0.25*ScreenWidth-64;
+    Enemyindicator1Frame.origin.y = 0.75*ScreenHeight-64;
     CGRect Enemyindicator2Frame = [self.EnemyIndicator2 frame];
-    Enemyindicator2Frame.origin.x = 0.575*ScreenWidth;
-    Enemyindicator2Frame.origin.y = 0.55*ScreenHeight;
+    Enemyindicator2Frame.origin.x = 0.75*ScreenWidth-64;
+    Enemyindicator2Frame.origin.y = 0.75*ScreenHeight-32;
     CGRect SelectEnemyType1OutletFrame = [self.SelectEnemyType1Outlet frame];
-    SelectEnemyType1OutletFrame.origin.x = 0.05*ScreenWidth;
-    SelectEnemyType1OutletFrame.origin.y = 0.25*ScreenHeight;
+    SelectEnemyType1OutletFrame.origin.x = 0.25*ScreenWidth-128;
+    SelectEnemyType1OutletFrame.origin.y = 0.4*ScreenHeight-128;
     CGRect SelectEnemyType2OutletFrame = [self.SelectEnemyType2Outlet frame];
-    SelectEnemyType2OutletFrame.origin.x = 0.5*ScreenWidth;
-    SelectEnemyType2OutletFrame.origin.y = 0.25*ScreenHeight;
+    SelectEnemyType2OutletFrame.origin.x = 0.75*ScreenWidth-128;
+    SelectEnemyType2OutletFrame.origin.y = 0.4*ScreenHeight-128;
     [self.EnemyIndicator1 setFrame:Enemyindicator1Frame];
     [self.EnemyIndicator2 setFrame:Enemyindicator2Frame];
     [self.SelectEnemyType1Outlet setFrame:SelectEnemyType1OutletFrame];
     [self.SelectEnemyType2Outlet setFrame:SelectEnemyType2OutletFrame];
-    
     
     
     _Level++;
