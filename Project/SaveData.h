@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface SaveData : NSObject
+@property NSMutableArray *SaveData;
 
 
 

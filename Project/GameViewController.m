@@ -491,5 +491,66 @@
     [self StartFight];
 }
 - (IBAction)ReturnToMenu:(UIButton *)sender {
+    PlayerData *data = [PlayerData sharedInstance];
+    NSString *HighScoreName = [data PlayerName];
+    NSInteger HighScore = [data Score];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSInteger TopScore = [defaults integerForKey:@"TopScore"];
+    NSInteger SecondScore = [defaults integerForKey:@"SecondScore"];
+    NSInteger ThirdScore = [defaults integerForKey:@"ThirdScore"];
+    NSInteger FourthScore = [defaults integerForKey:@"FourthScore"];
+    NSInteger FifthScore = [defaults integerForKey:@"FifthScore"];
+    NSString *TopPlayer = [defaults stringForKey:@"TopPlayer"];
+    NSString *SecondPlayer = [defaults stringForKey:@"SecondPlayer"];
+    NSString *ThirdPlayer = [defaults stringForKey:@"ThirdPlayer"];
+    NSString *FourthPlayer = [defaults stringForKey:@"FourthPlayer"];
+    //NSString *FifthPlayer = [defaults stringForKey:@"FifthPlayer"];
+    
+    if(HighScore > TopScore){
+        [defaults setObject:HighScoreName forKey:@"TopPlayer"];
+        [defaults setInteger:HighScore forKey:@"TopScore"];
+        [defaults setObject:TopPlayer forKey:@"SecondPlayer"];
+        [defaults setInteger:TopScore forKey:@"SecondScore"];
+        [defaults setObject:SecondPlayer forKey:@"ThirdPlayer"];
+        [defaults setInteger:SecondScore forKey:@"ThirdScore"];
+        [defaults setObject:ThirdPlayer forKey:@"FourthPlayer"];
+        [defaults setInteger:ThirdScore forKey:@"FourthScore"];
+        [defaults setObject:FourthPlayer forKey:@"FifthPlayer"];
+        [defaults setInteger:FourthScore forKey:@"FifthScore"];
+        [defaults synchronize];
+    }
+    else if(HighScore > SecondScore){
+        [defaults setObject:HighScoreName forKey:@"SecondPlayer"];
+        [defaults setInteger:HighScore forKey:@"SecondScore"];
+        [defaults setObject:SecondPlayer forKey:@"ThirdPlayer"];
+        [defaults setInteger:SecondScore forKey:@"ThirdScore"];
+        [defaults setObject:ThirdPlayer forKey:@"FourthPlayer"];
+        [defaults setInteger:ThirdScore forKey:@"FourthScore"];
+        [defaults setObject:FourthPlayer forKey:@"FifthPlayer"];
+        [defaults setInteger:FourthScore forKey:@"FifthScore"];
+        [defaults synchronize];
+    }
+    else if(HighScore > ThirdScore){
+        [defaults setObject:HighScoreName forKey:@"ThirdPlayer"];
+        [defaults setInteger:HighScore forKey:@"ThirdScore"];
+        [defaults setObject:ThirdPlayer forKey:@"FourthPlayer"];
+        [defaults setInteger:ThirdScore forKey:@"FourthScore"];
+        [defaults setObject:FourthPlayer forKey:@"FifthPlayer"];
+        [defaults setInteger:FourthScore forKey:@"FifthScore"];
+        [defaults synchronize];
+    }
+    else if(HighScore >FourthScore){
+        [defaults setObject:HighScoreName forKey:@"FourthPlayer"];
+        [defaults setInteger:HighScore forKey:@"FourthScore"];
+        [defaults setObject:FourthPlayer forKey:@"FifthPlayer"];
+        [defaults setInteger:FourthScore forKey:@"FifthScore"];
+        [defaults synchronize];
+    }
+    else if(HighScore > FifthScore){
+        [defaults setObject:HighScoreName forKey:@"FifthPlayer"];
+        [defaults setInteger:HighScore forKey:@"FifthScore"];
+        [defaults synchronize];
+    }
+    
 }
 @end

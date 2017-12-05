@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E194A6C61FD73EF900A020DD /* Dungeon Tab.png in Resources */ = {isa = PBXBuildFile; fileRef = E194A6C51FD73EF900A020DD /* Dungeon Tab.png */; };
+		E1A07E161FD71E0E005C6024 /* Gemstone.png in Resources */ = {isa = PBXBuildFile; fileRef = E1A07E151FD71E0E005C6024 /* Gemstone.png */; };
+		E1A07E181FD71E17005C6024 /* Skull.png in Resources */ = {isa = PBXBuildFile; fileRef = E1A07E171FD71E17005C6024 /* Skull.png */; };
+		E1A07E1A1FD72E25005C6024 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = E1A07E191FD72E25005C6024 /* Background.png */; };
 		E1B510151FD5A910007C0E85 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = E1B510141FD5A910007C0E85 /* Assets */; };
 		E1B510181FD5A94F007C0E85 /* Adventure Tab.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510171FD5A94F007C0E85 /* Adventure Tab.png */; };
 		E1B5101D1FD5A9A3007C0E85 /* Armour upgrade.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510191FD5A9A3007C0E85 /* Armour upgrade.png */; };
@@ -81,6 +85,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E194A6C51FD73EF900A020DD /* Dungeon Tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dungeon Tab.png"; sourceTree = "<group>"; };
+		E1A07E151FD71E0E005C6024 /* Gemstone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gemstone.png; sourceTree = "<group>"; };
+		E1A07E171FD71E17005C6024 /* Skull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Skull.png; sourceTree = "<group>"; };
+		E1A07E191FD72E25005C6024 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 		E1B510141FD5A910007C0E85 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 		E1B510171FD5A94F007C0E85 /* Adventure Tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Adventure Tab.png"; path = "Assets/Adventure Tab.png"; sourceTree = "<group>"; };
 		E1B510191FD5A9A3007C0E85 /* Armour upgrade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Armour upgrade.png"; path = "Assets/Armour Upgrade/Armour upgrade.png"; sourceTree = "<group>"; };
@@ -177,6 +185,10 @@
 		E1B510161FD5A941007C0E85 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				E194A6C51FD73EF900A020DD /* Dungeon Tab.png */,
+				E1A07E191FD72E25005C6024 /* Background.png */,
+				E1A07E151FD71E0E005C6024 /* Gemstone.png */,
+				E1A07E171FD71E17005C6024 /* Skull.png */,
 				E1B510171FD5A94F007C0E85 /* Adventure Tab.png */,
 				E1B510191FD5A9A3007C0E85 /* Armour upgrade.png */,
 				E1B5101A1FD5A9A3007C0E85 /* Armour upgradex128.png */,
@@ -405,6 +417,7 @@
 				E1B5105A1FD5A9FB007C0E85 /* Start Button x128.png in Resources */,
 				E1B5102D1FD5A9B4007C0E85 /* Bad guyx256.png in Resources */,
 				E1B510501FD5A9EA007C0E85 /* Mimicx128.png in Resources */,
+				E1A07E161FD71E0E005C6024 /* Gemstone.png in Resources */,
 				E1B510661FD5AA4F007C0E85 /* Torch.png in Resources */,
 				E1B510421FD5A9CD007C0E85 /* GAME OVERx512.png in Resources */,
 				E1B5103C1FD5A9C5007C0E85 /* Doorx128.png in Resources */,
@@ -432,6 +445,7 @@
 				E1B510411FD5A9CD007C0E85 /* GAME OVER.png in Resources */,
 				E1B5104A1FD5A9DD007C0E85 /* Health Potionx512.png in Resources */,
 				E1B510561FD5A9F2007C0E85 /* Shop tab.png in Resources */,
+				E1A07E1A1FD72E25005C6024 /* Background.png in Resources */,
 				E1B510681FD5AA4F007C0E85 /* Torch4x.png in Resources */,
 				E1B510671FD5AA4F007C0E85 /* Torch2x.png in Resources */,
 				E1B510331FD5A9BC007C0E85 /* Chest.png in Resources */,
@@ -442,7 +456,9 @@
 				E1B5102E1FD5A9B4007C0E85 /* Bad guyx512.png in Resources */,
 				E1B510521FD5A9EA007C0E85 /* Mimicx512.png in Resources */,
 				E1B510471FD5A9DD007C0E85 /* Health Potion.png in Resources */,
+				E1A07E181FD71E17005C6024 /* Skull.png in Resources */,
 				E1B510351FD5A9BC007C0E85 /* Chestx256.png in Resources */,
+				E194A6C61FD73EF900A020DD /* Dungeon Tab.png in Resources */,
 				E1DA93BD1FC47E380058DD9B /* Main.storyboard in Resources */,
 				E1B510361FD5A9BC007C0E85 /* Chestx512.png in Resources */,
 			);

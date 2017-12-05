@@ -12,5 +12,10 @@
 @interface MenuController : UIViewController <UITextFieldDelegate>
 - (IBAction)StartGame:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UITextField *PlayerNameTextField;
+@property (weak, nonatomic) IBOutlet UILabel *ScoreNumber1;
+@property (weak, nonatomic) IBOutlet UILabel *ScoreNumber2;
+@property (weak, nonatomic) IBOutlet UILabel *ScoreNumber3;
+@property (weak, nonatomic) IBOutlet UILabel *ScoreNumber4;
+@property (weak, nonatomic) IBOutlet UILabel *ScoreNumber5;
 
 @end
