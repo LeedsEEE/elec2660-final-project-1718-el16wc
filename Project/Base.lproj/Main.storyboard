@@ -394,6 +394,23 @@
                                     <outlet property="delegate" destination="QKJ-Fo-W12" id="ozi-6i-esF"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQV-ND-OKa">
+                                <frame key="frameInset" minX="301" minY="285" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="Instructions:" destination="QKJ-Fo-W12" eventType="touchUpInside" id="YfS-D9-Xbj"/>
+                                    <segue destination="06X-Jq-h8V" kind="show" id="nPt-3l-3Hv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kbs-H5-iYx">
+                                <frame key="frameInset" minX="28" minY="285" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="ResetScores:" destination="QKJ-Fo-W12" eventType="touchUpInside" id="Atj-zJ-Iqj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -439,6 +456,35 @@
             </objects>
             <point key="canvasLocation" x="-693.60000000000002" y="0.44977511244377816"/>
         </scene>
+        <!--Intruction View Controller-->
+        <scene sceneID="Ggy-2B-WU4">
+            <objects>
+                <viewController id="06X-Jq-h8V" customClass="IntructionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BoQ-2d-nlD"/>
+                        <viewControllerLayoutGuide type="bottom" id="nAc-4Y-P1a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1kO-sg-f4C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Kf-0x-hcl">
+                                <frame key="frameInset" minX="164" minY="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="Return:" destination="06X-Jq-h8V" eventType="touchUpInside" id="i3F-0M-suf"/>
+                                    <segue destination="QKJ-Fo-W12" kind="show" id="32D-tS-IIO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V7f-Ow-d2n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-694" y="668"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -477,4 +523,7 @@
         <image name="Title Bar x256.png" width="648" height="259"/>
         <image name="Torch2x.png" width="36" height="88"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="32D-tS-IIO"/>
+    </inferredMetricsTieBreakers>
 </document>

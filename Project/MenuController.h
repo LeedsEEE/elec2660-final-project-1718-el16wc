@@ -17,5 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *ScoreNumber3;
 @property (weak, nonatomic) IBOutlet UILabel *ScoreNumber4;
 @property (weak, nonatomic) IBOutlet UILabel *ScoreNumber5;
+- (IBAction)Instructions:(UIButton *)sender;
+- (IBAction)ResetScores:(UIButton *)sender;
 
 @end

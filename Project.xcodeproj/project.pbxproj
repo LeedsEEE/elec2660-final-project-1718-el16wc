@@ -65,6 +65,7 @@
 		E1DA93D81FC47E380058DD9B /* ProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DA93D71FC47E380058DD9B /* ProjectUITests.m */; };
 		E1DA93E71FC480690058DD9B /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DA93E61FC480690058DD9B /* MenuController.m */; };
 		E1DA93EA1FC4848F0058DD9B /* PlayerData.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DA93E91FC4848F0058DD9B /* PlayerData.m */; };
+		E1E8730F1FD82781007D6622 /* IntructionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E8730E1FD82781007D6622 /* IntructionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +156,8 @@
 		E1DA93E61FC480690058DD9B /* MenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
 		E1DA93E81FC4848F0058DD9B /* PlayerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerData.h; sourceTree = "<group>"; };
 		E1DA93E91FC4848F0058DD9B /* PlayerData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerData.m; sourceTree = "<group>"; };
+		E1E8730D1FD82781007D6622 /* IntructionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntructionViewController.h; sourceTree = "<group>"; };
+		E1E8730E1FD82781007D6622 /* IntructionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntructionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +268,8 @@
 				E1DA93B81FC47E380058DD9B /* GameViewController.h */,
 				E1DA93B91FC47E380058DD9B /* GameViewController.m */,
 				E1DA93BB1FC47E380058DD9B /* Main.storyboard */,
+				E1E8730D1FD82781007D6622 /* IntructionViewController.h */,
+				E1E8730E1FD82781007D6622 /* IntructionViewController.m */,
 				E1B510691FD5BCA6007C0E85 /* SaveData.h */,
 				E1B5106A1FD5BCA6007C0E85 /* SaveData.m */,
 				E1DA93E81FC4848F0058DD9B /* PlayerData.h */,
@@ -488,6 +493,7 @@
 				E1DA93BA1FC47E380058DD9B /* GameViewController.m in Sources */,
 				E1DA93B41FC47E380058DD9B /* AppDelegate.m in Sources */,
 				E1B5106B1FD5BCA6007C0E85 /* SaveData.m in Sources */,
+				E1E8730F1FD82781007D6622 /* IntructionViewController.m in Sources */,
 				E1DA93EA1FC4848F0058DD9B /* PlayerData.m in Sources */,
 				E1DA93E71FC480690058DD9B /* MenuController.m in Sources */,
 				E1DA93B71FC47E380058DD9B /* ShopViewController.m in Sources */,
