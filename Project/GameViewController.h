@@ -37,6 +37,10 @@
 @property (weak, nonatomic) IBOutlet UIButton *SelectEnemyType1Outlet;
 @property (weak, nonatomic) IBOutlet UIButton *SelectEnemyType2Outlet;
 
+@property (weak, nonatomic) IBOutlet UIImageView *CoinIncrease;
+
+@property (weak, nonatomic) IBOutlet UIImageView *EnemyDefeat;
+
 @property int TimeRemaining;
 @property int ButtonState;
 @property int LevelState;
@@ -61,6 +65,7 @@
 -(void) StartFight;
 -(void) EndFight;
 
+-(void) EnemyDefeated;
 
 
 @end

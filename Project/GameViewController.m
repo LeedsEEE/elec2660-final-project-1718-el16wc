@@ -413,11 +413,12 @@
     self.PlayerHPBackground.hidden = 1;
     self.EnemyHPBar.hidden = 1;
     self.EnemyHPBackground.hidden = 1;
+    self.EnemyDefeat.hidden = 0;
     
-    self.EnemyIndicator1.hidden = 0;
+    /*self.EnemyIndicator1.hidden = 0;
     self.EnemyIndicator2.hidden = 0;
     self.SelectEnemyType1Outlet.hidden = 0;
-    self.SelectEnemyType2Outlet.hidden = 0;
+    self.SelectEnemyType2Outlet.hidden = 0;*/
     
     PlayerData *data = [PlayerData sharedInstance];
     [data setCoins:[data Coins]+10*_Monstertype];
@@ -446,13 +447,26 @@
     [self.SelectEnemyType2Outlet setFrame:SelectEnemyType2OutletFrame];
     self.CurrentScoreLabel.text = [NSString stringWithFormat:@"Score : %.0f",[data Score]];
     
+    [NSTimer scheduledTimerWithTimeInterval:2
+                                     target:self
+                                   selector:@selector(EnemyDefeated)
+                                   userInfo:nil
+                                    repeats:NO];
+    
     
     _Level++;
     
 }
 
 
-
+-(void)EnemyDefeated{
+    self.EnemyIndicator1.hidden = 0;
+    self.EnemyIndicator2.hidden = 0;
+    self.SelectEnemyType1Outlet.hidden = 0;
+    self.SelectEnemyType2Outlet.hidden = 0;
+    self.EnemyDefeat.hidden = 1;
+    self.CoinIncrease.hidden = 1;
+}
 
 
 - (IBAction)PlayerAttack:(UIButton *)sender {
@@ -477,6 +491,12 @@
     DiceRoll = rand() %6;
     if (DiceRoll == 0){
         [data setCoins:[data Coins] + 100];
+        self.CoinIncrease.hidden = 0;
+        [NSTimer scheduledTimerWithTimeInterval:2
+                                         target:self
+                                       selector:@selector(EnemyDefeated)
+                                       userInfo:nil
+                                        repeats:NO];
     }
     
     else {

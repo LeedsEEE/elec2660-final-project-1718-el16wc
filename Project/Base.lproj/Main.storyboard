@@ -283,15 +283,25 @@
                                     <action selector="PlayerAttack:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Pob-as-2i0"/>
                                 </connections>
                             </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Enemy Defeatedx512.png" translatesAutoresizingMaskIntoConstraints="NO" id="RsQ-Vm-orK">
+                                <frame key="frameInset" minX="58.607818411167045" minY="206.36948297601498" width="256.00000000000006" height="256.00000000000006"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Coin Up x256.png" translatesAutoresizingMaskIntoConstraints="NO" id="5zM-Ns-Bea">
+                                <frame key="frameInset" minX="58.60781841111384" minY="206.36948297601066" width="256" height="256.00000000000011"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dungeon" image="Dungeon Tab.png" selectedImage="Dungeon Tab.png" id="cPa-gy-q4n"/>
                     <connections>
+                        <outlet property="CoinIncrease" destination="5zM-Ns-Bea" id="d7D-Ci-hgb"/>
                         <outlet property="CurrentScoreLabel" destination="UM0-Jn-aou" id="hCh-03-zzV"/>
                         <outlet property="EnemyAttackOutlet1" destination="UzJ-hr-Cot" id="TgD-kP-vdw"/>
                         <outlet property="EnemyAttackOutlet2" destination="pmb-O7-3mb" id="Nmc-ti-yvj"/>
                         <outlet property="EnemyAttackOutlet3" destination="B6e-G4-IpE" id="JMl-ma-zRi"/>
+                        <outlet property="EnemyDefeat" destination="RsQ-Vm-orK" id="LQy-tO-Ve6"/>
                         <outlet property="EnemyHPBackground" destination="ht1-ww-pXt" id="5nm-Cc-oI5"/>
                         <outlet property="EnemyHPBar" destination="igE-2v-eCr" id="mBd-nv-F7p"/>
                         <outlet property="EnemyImage" destination="eyA-Lt-zzx" id="kPp-OC-uNu"/>
@@ -622,9 +632,11 @@
         <image name="Background.png" width="320" height="640"/>
         <image name="Bad guyx512.png" width="512" height="512"/>
         <image name="Chestx512.png" width="512" height="256"/>
+        <image name="Coin Up x256.png" width="256" height="256"/>
         <image name="Doorx128.png" width="128" height="128"/>
         <image name="Doorx256.png" width="256" height="256"/>
         <image name="Dungeon Tab.png" width="50" height="50"/>
+        <image name="Enemy Defeatedx512.png" width="512" height="512"/>
         <image name="GAME OVERx512.png" width="512" height="512"/>
         <image name="Gemstone.png" width="45" height="45"/>
         <image name="Health Potionx128.png" width="128" height="128"/>
@@ -639,6 +651,6 @@
         <image name="Torch2x.png" width="36" height="88"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="32D-tS-IIO"/>
+        <segue reference="KfA-ll-WMu"/>
     </inferredMetricsTieBreakers>
 </document>
