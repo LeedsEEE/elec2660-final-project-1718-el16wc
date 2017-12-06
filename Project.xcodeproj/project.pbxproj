@@ -53,7 +53,22 @@
 		E1B510661FD5AA4F007C0E85 /* Torch.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510631FD5AA4F007C0E85 /* Torch.png */; };
 		E1B510671FD5AA4F007C0E85 /* Torch2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510641FD5AA4F007C0E85 /* Torch2x.png */; };
 		E1B510681FD5AA4F007C0E85 /* Torch4x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B510651FD5AA4F007C0E85 /* Torch4x.png */; };
-		E1B5106B1FD5BCA6007C0E85 /* SaveData.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B5106A1FD5BCA6007C0E85 /* SaveData.m */; };
+		E1D84DC11FD87B2D00908849 /* Back Buttonx128.png in Resources */ = {isa = PBXBuildFile; fileRef = E1D84DBC1FD87B2D00908849 /* Back Buttonx128.png */; };
+		E1D84DC21FD87B2D00908849 /* Coin Up x256.png in Resources */ = {isa = PBXBuildFile; fileRef = E1D84DBD1FD87B2D00908849 /* Coin Up x256.png */; };
+		E1D84DC31FD87B2D00908849 /* Enemy Defeatedx512.png in Resources */ = {isa = PBXBuildFile; fileRef = E1D84DBE1FD87B2D00908849 /* Enemy Defeatedx512.png */; };
+		E1D84DC41FD87B2D00908849 /* Instructionsx128.png in Resources */ = {isa = PBXBuildFile; fileRef = E1D84DBF1FD87B2D00908849 /* Instructionsx128.png */; };
+		E1D84DC51FD87B2D00908849 /* Reset Buttonx128.png in Resources */ = {isa = PBXBuildFile; fileRef = E1D84DC01FD87B2D00908849 /* Reset Buttonx128.png */; };
+		E1D84DCD1FD87B3E00908849 /* Gemx40.png in Resources */ = {isa = PBXBuildFile; fileRef = E1D84DC61FD87B3E00908849 /* Gemx40.png */; };
+		E1D84DCE1FD87B3E00908849 /* Gemx58.png in Resources */ = {isa = PBXBuildFile; fileRef = E1D84DC71FD87B3E00908849 /* Gemx58.png */; };
+		E1D84DCF1FD87B3E00908849 /* Gemx60.png in Resources */ = {isa = PBXBuildFile; fileRef = E1D84DC81FD87B3E00908849 /* Gemx60.png */; };
+		E1D84DD01FD87B3E00908849 /* Gemx80.png in Resources */ = {isa = PBXBuildFile; fileRef = E1D84DC91FD87B3E00908849 /* Gemx80.png */; };
+		E1D84DD11FD87B3E00908849 /* Gemx87.png in Resources */ = {isa = PBXBuildFile; fileRef = E1D84DCA1FD87B3E00908849 /* Gemx87.png */; };
+		E1D84DD21FD87B3E00908849 /* Gemx120.png in Resources */ = {isa = PBXBuildFile; fileRef = E1D84DCB1FD87B3E00908849 /* Gemx120.png */; };
+		E1D84DD31FD87B3E00908849 /* Gemx180.png in Resources */ = {isa = PBXBuildFile; fileRef = E1D84DCC1FD87B3E00908849 /* Gemx180.png */; };
+		E1D84DD81FD87C7700908849 /* Attack button TUT.png in Resources */ = {isa = PBXBuildFile; fileRef = E1D84DD41FD87C7700908849 /* Attack button TUT.png */; };
+		E1D84DD91FD87C7700908849 /* Damage button TUT.png in Resources */ = {isa = PBXBuildFile; fileRef = E1D84DD51FD87C7700908849 /* Damage button TUT.png */; };
+		E1D84DDA1FD87C7700908849 /* Doors TUT.png in Resources */ = {isa = PBXBuildFile; fileRef = E1D84DD61FD87C7700908849 /* Doors TUT.png */; };
+		E1D84DDB1FD87C7700908849 /* Shop TUT.png in Resources */ = {isa = PBXBuildFile; fileRef = E1D84DD71FD87C7700908849 /* Shop TUT.png */; };
 		E1DA93B11FC47E380058DD9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DA93B01FC47E380058DD9B /* main.m */; };
 		E1DA93B41FC47E380058DD9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DA93B31FC47E380058DD9B /* AppDelegate.m */; };
 		E1DA93B71FC47E380058DD9B /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DA93B61FC47E380058DD9B /* ShopViewController.m */; };
@@ -132,8 +147,22 @@
 		E1B510631FD5AA4F007C0E85 /* Torch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Torch.png; path = Assets/Torch/Torch.png; sourceTree = "<group>"; };
 		E1B510641FD5AA4F007C0E85 /* Torch2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Torch2x.png; path = Assets/Torch/Torch2x.png; sourceTree = "<group>"; };
 		E1B510651FD5AA4F007C0E85 /* Torch4x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Torch4x.png; path = Assets/Torch/Torch4x.png; sourceTree = "<group>"; };
-		E1B510691FD5BCA6007C0E85 /* SaveData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveData.h; sourceTree = "<group>"; };
-		E1B5106A1FD5BCA6007C0E85 /* SaveData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveData.m; sourceTree = "<group>"; };
+		E1D84DBC1FD87B2D00908849 /* Back Buttonx128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back Buttonx128.png"; sourceTree = "<group>"; };
+		E1D84DBD1FD87B2D00908849 /* Coin Up x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Coin Up x256.png"; sourceTree = "<group>"; };
+		E1D84DBE1FD87B2D00908849 /* Enemy Defeatedx512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Enemy Defeatedx512.png"; sourceTree = "<group>"; };
+		E1D84DBF1FD87B2D00908849 /* Instructionsx128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Instructionsx128.png; sourceTree = "<group>"; };
+		E1D84DC01FD87B2D00908849 /* Reset Buttonx128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reset Buttonx128.png"; sourceTree = "<group>"; };
+		E1D84DC61FD87B3E00908849 /* Gemx40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gemx40.png; sourceTree = "<group>"; };
+		E1D84DC71FD87B3E00908849 /* Gemx58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gemx58.png; sourceTree = "<group>"; };
+		E1D84DC81FD87B3E00908849 /* Gemx60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gemx60.png; sourceTree = "<group>"; };
+		E1D84DC91FD87B3E00908849 /* Gemx80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gemx80.png; sourceTree = "<group>"; };
+		E1D84DCA1FD87B3E00908849 /* Gemx87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gemx87.png; sourceTree = "<group>"; };
+		E1D84DCB1FD87B3E00908849 /* Gemx120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gemx120.png; sourceTree = "<group>"; };
+		E1D84DCC1FD87B3E00908849 /* Gemx180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gemx180.png; sourceTree = "<group>"; };
+		E1D84DD41FD87C7700908849 /* Attack button TUT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Attack button TUT.png"; sourceTree = "<group>"; };
+		E1D84DD51FD87C7700908849 /* Damage button TUT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Damage button TUT.png"; sourceTree = "<group>"; };
+		E1D84DD61FD87C7700908849 /* Doors TUT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Doors TUT.png"; sourceTree = "<group>"; };
+		E1D84DD71FD87C7700908849 /* Shop TUT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Shop TUT.png"; sourceTree = "<group>"; };
 		E1DA93AC1FC47E380058DD9B /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1DA93B01FC47E380058DD9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E1DA93B21FC47E380058DD9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -188,6 +217,22 @@
 		E1B510161FD5A941007C0E85 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				E1D84DD41FD87C7700908849 /* Attack button TUT.png */,
+				E1D84DD51FD87C7700908849 /* Damage button TUT.png */,
+				E1D84DD61FD87C7700908849 /* Doors TUT.png */,
+				E1D84DD71FD87C7700908849 /* Shop TUT.png */,
+				E1D84DC61FD87B3E00908849 /* Gemx40.png */,
+				E1D84DC71FD87B3E00908849 /* Gemx58.png */,
+				E1D84DC81FD87B3E00908849 /* Gemx60.png */,
+				E1D84DC91FD87B3E00908849 /* Gemx80.png */,
+				E1D84DCA1FD87B3E00908849 /* Gemx87.png */,
+				E1D84DCB1FD87B3E00908849 /* Gemx120.png */,
+				E1D84DCC1FD87B3E00908849 /* Gemx180.png */,
+				E1D84DBC1FD87B2D00908849 /* Back Buttonx128.png */,
+				E1D84DBD1FD87B2D00908849 /* Coin Up x256.png */,
+				E1D84DBE1FD87B2D00908849 /* Enemy Defeatedx512.png */,
+				E1D84DBF1FD87B2D00908849 /* Instructionsx128.png */,
+				E1D84DC01FD87B2D00908849 /* Reset Buttonx128.png */,
 				E194A6C51FD73EF900A020DD /* Dungeon Tab.png */,
 				E1A07E191FD72E25005C6024 /* Background.png */,
 				E1A07E151FD71E0E005C6024 /* Gemstone.png */,
@@ -270,8 +315,6 @@
 				E1DA93BB1FC47E380058DD9B /* Main.storyboard */,
 				E1E8730D1FD82781007D6622 /* IntructionViewController.h */,
 				E1E8730E1FD82781007D6622 /* IntructionViewController.m */,
-				E1B510691FD5BCA6007C0E85 /* SaveData.h */,
-				E1B5106A1FD5BCA6007C0E85 /* SaveData.m */,
 				E1DA93E81FC4848F0058DD9B /* PlayerData.h */,
 				E1DA93E91FC4848F0058DD9B /* PlayerData.m */,
 				E1DA93E51FC480690058DD9B /* MenuController.h */,
@@ -419,24 +462,32 @@
 			files = (
 				E1B510181FD5A94F007C0E85 /* Adventure Tab.png in Resources */,
 				E1B5105B1FD5A9FB007C0E85 /* Start Button.png in Resources */,
+				E1D84DC11FD87B2D00908849 /* Back Buttonx128.png in Resources */,
+				E1D84DD31FD87B3E00908849 /* Gemx180.png in Resources */,
 				E1B5105A1FD5A9FB007C0E85 /* Start Button x128.png in Resources */,
 				E1B5102D1FD5A9B4007C0E85 /* Bad guyx256.png in Resources */,
 				E1B510501FD5A9EA007C0E85 /* Mimicx128.png in Resources */,
+				E1D84DDB1FD87C7700908849 /* Shop TUT.png in Resources */,
+				E1D84DD11FD87B3E00908849 /* Gemx87.png in Resources */,
 				E1A07E161FD71E0E005C6024 /* Gemstone.png in Resources */,
 				E1B510661FD5AA4F007C0E85 /* Torch.png in Resources */,
 				E1B510421FD5A9CD007C0E85 /* GAME OVERx512.png in Resources */,
+				E1D84DC21FD87B2D00908849 /* Coin Up x256.png in Resources */,
 				E1B5103C1FD5A9C5007C0E85 /* Doorx128.png in Resources */,
 				E1B510601FD5AA07007C0E85 /* Title Bar x128.png in Resources */,
 				E1B510261FD5A9AC007C0E85 /* Attack Upgradex128.png in Resources */,
 				E1B510271FD5A9AC007C0E85 /* Attack Upgradex256.png in Resources */,
 				E1B510251FD5A9AC007C0E85 /* Attack Upgrade.png in Resources */,
 				E1B5101E1FD5A9A3007C0E85 /* Armour upgradex128.png in Resources */,
+				E1D84DCD1FD87B3E00908849 /* Gemx40.png in Resources */,
 				E1B510341FD5A9BC007C0E85 /* Chestx128.png in Resources */,
 				E1DA93C21FC47E380058DD9B /* LaunchScreen.storyboard in Resources */,
 				E1B510151FD5A910007C0E85 /* Assets in Resources */,
 				E1B510551FD5A9F2007C0E85 /* Shop image.png in Resources */,
 				E1B5103B1FD5A9C5007C0E85 /* Door.png in Resources */,
+				E1D84DC31FD87B2D00908849 /* Enemy Defeatedx512.png in Resources */,
 				E1B510281FD5A9AC007C0E85 /* Attack Upgradex512.png in Resources */,
+				E1D84DD01FD87B3E00908849 /* Gemx80.png in Resources */,
 				E1B5101F1FD5A9A3007C0E85 /* Armour upgradex256.png in Resources */,
 				E1B510481FD5A9DD007C0E85 /* Health Potionx128.png in Resources */,
 				E1B5101D1FD5A9A3007C0E85 /* Armour upgrade.png in Resources */,
@@ -446,13 +497,18 @@
 				E1B5104F1FD5A9EA007C0E85 /* Mimic.png in Resources */,
 				E1B510611FD5AA07007C0E85 /* Title Bar x256.png in Resources */,
 				E1B510201FD5A9A3007C0E85 /* Armour upgradex512.png in Resources */,
+				E1D84DDA1FD87C7700908849 /* Doors TUT.png in Resources */,
 				E1B5105C1FD5A9FB007C0E85 /* Start Buttonx256.png in Resources */,
+				E1D84DC51FD87B2D00908849 /* Reset Buttonx128.png in Resources */,
+				E1D84DD91FD87C7700908849 /* Damage button TUT.png in Resources */,
+				E1D84DCE1FD87B3E00908849 /* Gemx58.png in Resources */,
 				E1B510411FD5A9CD007C0E85 /* GAME OVER.png in Resources */,
 				E1B5104A1FD5A9DD007C0E85 /* Health Potionx512.png in Resources */,
 				E1B510561FD5A9F2007C0E85 /* Shop tab.png in Resources */,
 				E1A07E1A1FD72E25005C6024 /* Background.png in Resources */,
 				E1B510681FD5AA4F007C0E85 /* Torch4x.png in Resources */,
 				E1B510671FD5AA4F007C0E85 /* Torch2x.png in Resources */,
+				E1D84DCF1FD87B3E00908849 /* Gemx60.png in Resources */,
 				E1B510331FD5A9BC007C0E85 /* Chest.png in Resources */,
 				E1B5103D1FD5A9C5007C0E85 /* Doorx256.png in Resources */,
 				E1B510491FD5A9DD007C0E85 /* Health Potionx256.png in Resources */,
@@ -460,12 +516,15 @@
 				E1B5103E1FD5A9C5007C0E85 /* Doorx512.png in Resources */,
 				E1B5102E1FD5A9B4007C0E85 /* Bad guyx512.png in Resources */,
 				E1B510521FD5A9EA007C0E85 /* Mimicx512.png in Resources */,
+				E1D84DD81FD87C7700908849 /* Attack button TUT.png in Resources */,
 				E1B510471FD5A9DD007C0E85 /* Health Potion.png in Resources */,
 				E1A07E181FD71E17005C6024 /* Skull.png in Resources */,
 				E1B510351FD5A9BC007C0E85 /* Chestx256.png in Resources */,
 				E194A6C61FD73EF900A020DD /* Dungeon Tab.png in Resources */,
 				E1DA93BD1FC47E380058DD9B /* Main.storyboard in Resources */,
 				E1B510361FD5A9BC007C0E85 /* Chestx512.png in Resources */,
+				E1D84DD21FD87B3E00908849 /* Gemx120.png in Resources */,
+				E1D84DC41FD87B2D00908849 /* Instructionsx128.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,7 +551,6 @@
 			files = (
 				E1DA93BA1FC47E380058DD9B /* GameViewController.m in Sources */,
 				E1DA93B41FC47E380058DD9B /* AppDelegate.m in Sources */,
-				E1B5106B1FD5BCA6007C0E85 /* SaveData.m in Sources */,
 				E1E8730F1FD82781007D6622 /* IntructionViewController.m in Sources */,
 				E1DA93EA1FC4848F0058DD9B /* PlayerData.m in Sources */,
 				E1DA93E71FC480690058DD9B /* MenuController.m in Sources */,
