@@ -14,11 +14,16 @@
 
 @implementation MenuController
 
+#pragma mark view setup
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];//accessing user defaults
+    
+    //initialising default values to replace nuls in the userdefaults.
     NSString *HighScoreName = @"N/A";
     NSInteger HighScore = 0;
+    
+    //checking for nuls in the userdefaults for the keys being used and replacing them with the default values created
     if([defaults objectForKey:@"TopPlayer"] == nil){
         [defaults setObject:HighScoreName forKey:@"TopPlayer"];
         [defaults setInteger:HighScore forKey:@"TopScore"];
@@ -44,6 +49,8 @@
         [defaults setInteger:HighScore forKey:@"FifthScore"];
         [defaults synchronize];
     }
+    
+    //creating variables from the stored values stored in userdefaults
     NSInteger TopScore = [defaults integerForKey:@"TopScore"];
     NSInteger SecondScore = [defaults integerForKey:@"SecondScore"];
     NSInteger ThirdScore = [defaults integerForKey:@"ThirdScore"];
@@ -55,15 +62,16 @@
     NSString *FourthPlayer = [defaults stringForKey:@"FourthPlayer"];
     NSString *FifthPlayer = [defaults stringForKey:@"FifthPlayer"];
     
+    //setting the scoreboard label's text using the variables created from userdefaults
     self.ScoreNumber1.text = [NSString stringWithFormat:@"1. %@ -- %ld",TopPlayer,TopScore];
     self.ScoreNumber2.text = [NSString stringWithFormat:@"2. %@ -- %ld",SecondPlayer,SecondScore];
     self.ScoreNumber3.text = [NSString stringWithFormat:@"3. %@ -- %ld",ThirdPlayer,ThirdScore];
     self.ScoreNumber4.text = [NSString stringWithFormat:@"4. %@ -- %ld",FourthPlayer,FourthScore];
     self.ScoreNumber5.text = [NSString stringWithFormat:@"5. %@ -- %ld",FifthPlayer,FifthScore];
-    // Do any additional setup after loading the view.
 }
 
 -(void)viewDidAppear:(BOOL)animated{
+    //creating variables from the stored values stored in userdefaults
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSInteger TopScore = [defaults integerForKey:@"TopScore"];
     NSInteger SecondScore = [defaults integerForKey:@"SecondScore"];
@@ -76,6 +84,7 @@
     NSString *FourthPlayer = [defaults stringForKey:@"FourthPlayer"];
     NSString *FifthPlayer = [defaults stringForKey:@"FifthPlayer"];
     
+    //setting the scoreboard label's text using the variables created from userdefaults
     self.ScoreNumber1.text = [NSString stringWithFormat:@"1. %@ -- %ld",TopPlayer,TopScore];
     self.ScoreNumber2.text = [NSString stringWithFormat:@"2. %@ -- %ld",SecondPlayer,SecondScore];
     self.ScoreNumber3.text = [NSString stringWithFormat:@"3. %@ -- %ld",ThirdPlayer,ThirdScore];
@@ -86,20 +95,13 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+#pragma mark Button setup
 
 - (IBAction)StartGame:(UIButton *)sender {
+    //sets the base values for the playerdata before transistioning to the game/shop view
     PlayerData *data = [PlayerData sharedInstance];
     [data setPlayerName:self.PlayerNameTextField.text ];
     [data setMaxHP:50];
@@ -111,12 +113,18 @@
 
 
 - (IBAction)Instructions:(UIButton *)sender {
+    //any additional setup before transistion to instructions tab to be done here
 }
 
 - (IBAction)ResetScores:(UIButton *)sender {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    //method Resets all values stored in userdefaults for the keys being used and then updates the score labels
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];//accessing user defaults
+    
+    //setting the values to reset to
     NSString *HighScoreName = @"N/A";
     NSInteger HighScore = 0;
+    
+    //setting the values in userdefaults to the reset values
     [defaults setObject:HighScoreName forKey:@"TopPlayer"];
     [defaults setInteger:HighScore forKey:@"TopScore"];
     [defaults setObject:HighScoreName forKey:@"SecondPlayer"];
@@ -128,6 +136,8 @@
     [defaults setObject:HighScoreName forKey:@"FifthPlayer"];
     [defaults setInteger:HighScore forKey:@"FifthScore"];
     [defaults synchronize];
+    
+    //setting the score labels
     NSInteger TopScore = [defaults integerForKey:@"TopScore"];
     NSInteger SecondScore = [defaults integerForKey:@"SecondScore"];
     NSInteger ThirdScore = [defaults integerForKey:@"ThirdScore"];

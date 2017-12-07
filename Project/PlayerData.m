@@ -18,11 +18,13 @@
 
 static PlayerData *_sharedInstance;
 
+
+//initialising the values of the datamodel
 -(id) init {
     if (self = [super init]){
         //custom initialisation
-        _PlayerName = @"Blarg";
-        _MaxHP = 60;
+        _PlayerName = @"Freyja";
+        _MaxHP = 50;
         _HP = 50;
         _AttackPower = 10;
         _Coins = 100;
@@ -31,7 +33,7 @@ static PlayerData *_sharedInstance;
     return self;
 }
 
-+ (PlayerData *) sharedInstance
++ (PlayerData *) sharedInstance//defining the method for accessing the shared instance of the datamodel
 {
     if (!_sharedInstance) {
         _sharedInstance = [[PlayerData alloc]init];
@@ -40,3 +42,4 @@ static PlayerData *_sharedInstance;
     return _sharedInstance;
 }
 @end
+//Some code for this class was taken from Dr. Craig Evans' blog at : https://eencae.wordpress.com/ios-tutorials/other/passing-data-between-multiple-views/

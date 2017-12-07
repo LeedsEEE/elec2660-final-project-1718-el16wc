@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface PlayerData : NSObject
-
+//creating the properties needed for the played data model
 @property (nonatomic, copy) NSString *PlayerName;
 @property float MaxHP;
 @property float HP;
@@ -20,3 +20,4 @@
 + (PlayerData *) sharedInstance;
 
 @end
+//Some code for this class was taken from Dr. Craig Evans' blog at : https://eencae.wordpress.com/ios-tutorials/other/passing-data-between-multiple-views/

@@ -10,6 +10,8 @@
 #import "PlayerData.h"
 
 @interface ShopViewController : UIViewController
+
+//outlets to control all labels and images within the view
 @property (weak, nonatomic) IBOutlet UILabel *PlayerNameTest;
 @property (weak, nonatomic) IBOutlet UILabel *MaxHealthLabel;
 @property (weak, nonatomic) IBOutlet UILabel *HealthLabel;
@@ -17,6 +19,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *CoinLabel;
 @property (weak, nonatomic) IBOutlet UILabel *ScoreLabel;
 
+
+//Buttons within the shop view
 - (IBAction)HealthPotion:(UIButton *)sender;
 - (IBAction)ArmourUpgrade:(UIButton *)sender;
 - (IBAction)AttackUpgrade:(UIButton *)sender;
