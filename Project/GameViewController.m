@@ -402,7 +402,7 @@
     _MonsterAttack = 10 * _Level * _Monstertype;
     
     //setting timer which speeds up depending on the number of levels completed.
-    float TempTimer = _Level * _Monstertype * 100;
+    float TempTimer = _Level *40*_Monstertype + _Monstertype * 100;
     [NSTimer scheduledTimerWithTimeInterval:1/TempTimer
                                      target:self
                                    selector:@selector(onTick:)
